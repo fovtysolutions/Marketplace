@@ -1,0 +1,104 @@
+.fixstyle1 {
+    display: flex; flex-direction:column; align-items:center;
+}
+
+.fixstyle2 {
+    width: 35px; height: 35px;
+}
+
+.fixstyle3{
+    font-size: 11px; color:#000; font-weight:600;
+}
+
+.fixnone{
+    display:none;
+}
+
+.fixutility {
+    -webkit-transform: translate3d(0, 100px, 0) scale3d(0.8, 0.8, 1)
+        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -moz-transform: translate3d(0, 100px, 0) scale3d(0.8, 0.8, 1)
+        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    -ms-transform: translate3d(0, 100px, 0) scale3d(0.8, 0.8, 1)
+        rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+    transform: translate3d(0, 100px, 0) scale3d(0.8, 0.8, 1) rotateX(0)
+        rotateY(0) rotateZ(0) skew(0, 0);
+    opacity: 1;
+}
+
+.fixposition{
+    position: relative;
+}
+
+.fixcopyrightcolor {
+    color: #15ef;
+}
+
+.supportBtn {
+    position: relative;
+    top: 10%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px 5%;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .supportBtn span {
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+
+  .supportBtn a {
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+  .supportBtn2 {
+      display: none;
+    }
+
+  @media screen and (max-width: 1200px) {
+    .supportBtn {
+      position: relative;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .supportBtn a {
+      position: relative;
+      margin: 0 !important;
+      width: auto !important;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .supportBtn {
+      display: none;
+    }
+    .supportBtn2 {
+      display: flex;
+      width: 100%;
+    }
+  }
+  .footer{
+    padding-top: 2rem !important;
+  }
+  .footer-grid{
+    padding-bottom: 1rem !important;
+  }
+  .footer-grid-menu {
+    grid-row-gap: 0px !important;
+  }
+
+
+  .iconemailheader {
+    font-size:10px; text-transform: none; margin-top:-10px; width:100%; color:#858c95; margin-left:0px; line-height:20px;
+  }
+  .iconnameheade{
+    display:flex; align-items:flex-start; justify-content:flex-start; flex-direction:column;
+  }
