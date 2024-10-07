@@ -28,13 +28,13 @@ TABLE CONTENT
 ***/
 @import url(https://fonts.bunny.net/css?family=dm-sans:400,500,700|kanit:700);
 /*import vendors*/
-/* @import url(../css/vendors/normalize.css);
-@import url(../css/vendors/bootstrap.min.css);
-@import url(../css/vendors/uicons-regular-rounded.css);
-@import url(../css/plugins/swiper-bundle.min.css);
-@import url(../css/plugins/select2.min.css);
-@import url(../css/plugins/slick.css);
-@import url(../css/plugins/animate.min.css); */
+/* @import url(./css/vendors/normalize.css);
+@import url(./css/vendors/bootstrap.min.css);
+@import url(./css/vendors/uicons-regular-rounded.css);
+@import url(./css/plugins/swiper-bundle.min.css);
+@import url(./css/plugins/select2.min.css);
+@import url(./css/plugins/slick.css);
+@import url(./css/plugins/animate.min.css); */
 /*RESET*/
 html,
 body,
@@ -4451,11 +4451,16 @@ a.text-brand-3:hover {
 }
 
 .footer .icon-socials {
-  display: inline-block;
+  /* display: inline-block;
   margin-right: 15px;
   height: 32px;
-  width: 32px;
+  width: 32px; */
+  transition-duration: 0.2s; 
+  margin-right: 15px;
+  padding: 10px 12px;
+  border-radius: 46px;
   transition-duration: 0.2s;
+  background-color: #38befb30;
 }
 .footer .icon-socials:hover {
   transform: translateY(-3px);

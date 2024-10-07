@@ -1,7 +1,5 @@
 import { Routes, Route, useLocation } from 'react-router-dom';
-import "../assets/css/homecss/style.css";
-import "../assets/css/homecss/banner_styling.css";
-import "../assets/css/homecss/all.css";
+import "../assets/css/style.css";
 import "../Components/Auth/auth.css";
 import Login from "../Components/Auth/Login"
 import Forgot from "../Components/Auth/Forgot"

@@ -12,8 +12,8 @@ function App() {
     <>
         <Header/>
         <Components/>
-        <Marketside/>
-        <Userside/>
+        {/* <Marketside/> */}
+        {/* <Userside/> */}
         <Footer/>
     </>
   )

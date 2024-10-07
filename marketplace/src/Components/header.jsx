@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState, } from "react";
 import { useLocation } from 'react-router-dom';
-import "../assets/css/homecss/style.css";
-import "../assets/css/homecss/banner_styling.css";
-import "../assets/css/homecss/all.css";
 import Afterlogin from "./afterlogin";
 import "./fix.css";
 
