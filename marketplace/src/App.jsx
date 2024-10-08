@@ -14,7 +14,7 @@ function App() {
         <Components/>
         {/* <Marketside/> */}
         {/* <Userside/> */}
-        <Footer/>
+        {/* <Footer/> */}
     </>
   )
 }
