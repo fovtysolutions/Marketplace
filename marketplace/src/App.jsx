@@ -12,9 +12,9 @@ function App() {
     <>
         <Header/>
         <Components/>
-        {/* <Marketside/> */}
-        {/* <Userside/> */}
-        {/* <Footer/> */}
+        <Marketside/>
+        <Userside/>
+        <Footer/>
     </>
   )
 }

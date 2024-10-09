@@ -1,57 +1,127 @@
-import React, { useEffect } from 'react';
-import lottie from 'lottie-web';
+import React, { useEffect } from "react";
+// import lottie from "lottie-web";
 
 const Banner = () => {
-    useEffect(() => {
-        const container = document.querySelector('.trial-lotty-animation');
-        container.innerHTML = '';
-        lottie.loadAnimation({
-          container: container,
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          path: `${import.meta.env.VITE_APP_URL}men.json` // the path to the animation JSON file
-        });
-        const containermen = document.querySelector('.trial-lotty-animation-men');
-        containermen.innerHTML = '';
-        lottie.loadAnimation({
-            container: containermen, 
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: `${import.meta.env.VITE_APP_URL}menwithcoffee.json` // the path to the animation JSON file
-          });
-      }, []);
+	// useEffect(() => {
+	//     const container = document.querySelector('.trial-lotty-animation');
+	//     container.innerHTML = '';
+	//     lottie.loadAnimation({
+	//       container: container,
+	//       renderer: 'svg',
+	//       loop: true,
+	//       autoplay: true,
+	//       path: `${import.meta.env.VITE_APP_URL}men.json` // the path to the animation JSON file
+	//     });
+	//     const containermen = document.querySelector('.trial-lotty-animation-men');
+	//     containermen.innerHTML = '';
+	//     lottie.loadAnimation({
+	//         container: containermen,
+	//         renderer: 'svg',
+	//         loop: true,
+	//         autoplay: true,
+	//         path: `${import.meta.env.VITE_APP_URL}menwithcoffee.json` // the path to the animation JSON file
+	//       });
+	//   }, []);
 
-    return (
-        <>
-            <div className="trial-hero-section">
-                <div className="trial-w-layout-grid trial-hero-grid">
-                <div className="trial-animation-box-left">
-                    <div className="trial-lotty-animation"></div>
-                </div>
-                <div className="trial-center-hero-div">
-                    <div className="trial-top-text">We are your future</div>
-                        <h1 className="trial-title-1 center">Get your desired Jobs with <span>Gritupp.</span></h1>
-                        <div className="margin-30px">
-                            <p className="trial-subhead center">
-                            Get Jobs, create trackable resumes and enrich your applications
-                            </p>
-                        </div>
-                        <div className="margin-50px">
-                            <form className="trial-search-wrapper w-form" method="GET" action="assets/php/search.php">
-                                <input type="search" className="trial-search-input trial-w-input" maxLength="256" name="query" placeholder="Keywords..." id="searchmain" required="" />
-                                <input type="submit" className="trial-button trial-search trial-w-button" value="Search" />
-                            </form>
-                        </div>
-                    </div>
-                    <div className="trial-animation-box-right">
-                        <div className="trial-lotty-animation-men"></div>
-                    </div>
-                </div>
-            </div>
-        </>
-    );
+	return (
+		<>
+			<div className="col-xl-6 col-lg-6 col-md-6 mb-30">
+				<div className="box-swiper">
+					<div className="swiper-container swiper-group-1">
+						<div className="swiper-wrapper">
+							<div className="swiper-slide">
+								<div className="banner-big bg-27 height-100">
+									<div className="row align-items-end height-100">
+										<div className="col-xl-8 col-lg-12 height-100 align-items-center d-flex">
+											<div className="box-banner-big">
+												<span className="font-sm text-uppercase">
+													Hot Right Now
+												</span>
+												<h2 className="mt-10 color-gray-1000">
+													Sale Up to 50% Off
+												</h2>
+												<h1 className="color-gray-1000 mb-20">
+													Online Book Store
+												</h1>
+												<div className="row">
+													<div className="col-xl-5 col-lg-8 col-md-10 col-sm-12">
+														<p className="font-sm color-brand-3">
+															Curabitur id lectus in felis hendrerit efficitur
+															quis quis lectus. Donec sollicitudin elit eu ipsum
+															maximus blandit. Curabitur blandit tempus
+															consectetur.
+														</p>
+													</div>
+												</div>
+												<div className="mt-30">
+													<a className="btn btn-brand-2" href="shop-grid.html">
+														Shop now
+													</a>
+													<a className="btn btn-link" href="shop-grid.html">
+														Learn more
+													</a>
+												</div>
+											</div>
+										</div>
+										<div className="col-xl-4 banner-image">
+											<img
+												src="assets/imgs/page/homepage8/banner.png"
+												alt="Ecom"
+											/>
+										</div>
+									</div>
+								</div>
+							</div>
+							{/* <div className="swiper-slide">
+								<div className="banner-big bg-27 height-100">
+									<div className="row align-items-end height-100">
+										<div className="col-xl-8 col-lg-12 height-100 align-items-center d-flex">
+											<div className="box-banner-big">
+												<span className="font-sm text-uppercase">
+													Hot Right Now
+												</span>
+												<h2 className="mt-10 color-gray-1000">
+													Sale Up to 50% Off
+												</h2>
+												<h1 className="color-gray-1000 mb-20">
+													Online Book Store
+												</h1>
+												<div className="row">
+													<div className="col-xl-5 col-lg-8 col-md-10 col-sm-12">
+														<p className="font-sm color-brand-3">
+															Curabitur id lectus in felis hendrerit efficitur
+															quis quis lectus. Donec sollicitudin elit eu ipsum
+															maximus blandit. Curabitur blandit tempus
+															consectetur.
+														</p>
+													</div>
+												</div>
+												<div className="mt-30">
+													<a className="btn btn-brand-2" href="shop-grid.html">
+														Shop now
+													</a>
+													<a className="btn btn-link" href="shop-grid.html">
+														Learn more
+													</a>
+												</div>
+											</div>
+										</div>
+										<div className="col-xl-4 banner-image">
+											<img
+												src="assets/imgs/page/homepage8/banner.png"
+												alt="Ecom"
+											/>
+										</div>
+									</div>
+								</div>
+							</div> */}
+						</div>
+						<div className="swiper-pagination swiper-pagination-1" />
+					</div>
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default Banner;
