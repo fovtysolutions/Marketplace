@@ -2180,8 +2180,8 @@ a.text-brand-3:hover {
   padding: 0px;
 }
 .card-grid-style-2 .image-box {
-  min-width: 135px;
-  max-width: 135px;
+  min-width: 90px !important;
+  max-width: 90px !important;
   position: relative;
   padding-right: 15px;
   text-align: center;
