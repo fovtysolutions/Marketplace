@@ -11,13 +11,16 @@ import Trendingproducts from "./Home/Trendingproducts";
 import Suppliers from "./Home/Suppliers";
 import Sourcenow from "./Home/Sourcenow";
 
-
-
 const Homeindex = () => {
     return (
         <>
+<<<<<<< HEAD
             <div className="container">
                 <div className="row" style={{ paddingTop: '20px'}}>
+=======
+            <div className="container-hero">
+                <div className="row-hero">
+>>>>>>> 8b3cc4ac8348e13d67aef6f576d9741a9844ab03
                 {/* <div className="hero-main-cnt"> */}
                 <Heroleft/>
                 <Banner/>

@@ -1,5 +1,6 @@
 // import React, { useEffect } from "react";
 // import lottie from "lottie-web";
+<<<<<<< HEAD
 import React from "react";
 // import { useRef, useState } from 'react';
 // Import Swiper React components
@@ -13,6 +14,9 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination, Autoplay } from "swiper/modules";
+=======
+import '../01Style/list.css';
+>>>>>>> 8b3cc4ac8348e13d67aef6f576d9741a9844ab03
 
 const Banner = () => {
 	// useEffect(() => {
@@ -37,6 +41,7 @@ const Banner = () => {
 	//   }, []);
 
 	return (
+<<<<<<< HEAD
 		<> <div class="col-xl-6 col-lg-6 col-md-6 mb-30">
 			<Swiper 
 			loop={true} // Enables looping
@@ -147,6 +152,15 @@ const Banner = () => {
 				</SwiperSlide>
 			</Swiper>
 			</div>
+=======
+		<>
+				<div className="banner">
+					<img
+						src="https://media.istockphoto.com/id/182408547/photo/elegant-shopping-mall.jpg?s=612x612&w=0&k=20&c=qpoZ75-JlU67tx710rgzp4Eb38kb5H-2M_bG9TTEZK0="
+						alt="Banner Pic"
+					/>
+				</div>
+>>>>>>> 8b3cc4ac8348e13d67aef6f576d9741a9844ab03
 		</>
 	);
 };
