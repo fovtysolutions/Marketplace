@@ -3,7 +3,7 @@ import React from 'react'
 export default function Topbar() {
   return (
     <>
-    <div className="topbar">
+    {/* <div className="topbar">
         <div className="container-topbar">
             <div className="col-md-6">
             <div className="menu-topbar-left d-none d-xl-block">
@@ -24,7 +24,7 @@ export default function Topbar() {
             </div>
             </div>
         </div>
-    </div>
+    </div> */}
     {/* <div className="topbar">
   <div className="container-topbar">
     <div className="menu-topbar-left d-none d-xl-block">

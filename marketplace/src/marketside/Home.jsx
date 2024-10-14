@@ -8,13 +8,11 @@ import Companies from "./Home/companysection";
 import Grituppflow from "./Home/grituppflow";
 import Heroright from "./Home/Heroright";
 
-
-
 const Homeindex = () => {
     return (
         <>
-            <div className="container">
-                <div className="row">
+            <div className="container-hero">
+                <div className="row-hero">
                 {/* <div className="hero-main-cnt"> */}
                 <Heroleft/>
                 <Banner/>

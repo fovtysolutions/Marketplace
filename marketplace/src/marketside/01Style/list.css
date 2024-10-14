@@ -1,0 +1,42 @@
+.category-list {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.category-list li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.category-item {
+    display: block; /* Make the link fill the list item */
+    padding: 7px 15px; /* Add padding for better click area */
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px;
+    border-color:black;
+}
+
+.category-item:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+}
+
+
+.banner {
+    position: relative; /* Ensure the banner can contain absolutely positioned elements */
+    width: 100%; /* Set to desired width, could be a fixed size or percentage */
+    height: 500px; /* Set desired height */
+    overflow: hidden; /* Hide overflow if the image doesn't fit */
+  }
+  
+  .banner img {
+    position: absolute; /* Positioning the image absolutely */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Make image width 100% of the container */
+    height: 100%; /* Make image height 100% of the container */
+    object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
+    transform: translate(-50%, -50%); /* Center the image */
+  }
+  
