@@ -11,15 +11,15 @@ export default function Heroleft() {
                   </div>
                   <div class="sidebar-content">
                     <ul class="category-list">
-                      <li class="category-item"><a href="shop-grid.html">Agriculture</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Building Construction</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Electrical Equipment</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Apparel & Accessories </a></li>
-                      <li class="category-item"><a href="shop-grid.html">Automobile & Motorcycles</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Beauty</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Personal Care</a></li>
-                      <li class="category-item"><a href="shop-grid.html">Chemicals</a></li>
-                      <li class="category-item"><a href="shop-grid.html">More Categories</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Agriculture</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Building Construction</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Electrical Equipment</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Apparel & Accessories </a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Automobile & Motorcycles</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Beauty</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Personal Care</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Chemicals</a></li>
+                      <li class="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>More Categories</a></li>
                     </ul>
                     {/* <div>
                       <div class="collapse" id="moreMenu">

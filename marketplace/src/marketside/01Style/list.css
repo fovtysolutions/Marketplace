@@ -5,32 +5,30 @@
 }
 
 .category-list li {
-    margin: 10px 0; /* Space between list items */
+    margin: 8px 0; /* Space between list items */
 }
 
 .category-item {
     display: block; /* Make the link fill the list item */
-    padding: 7px 15px; /* Add padding for better click area */
+    padding: 3px 5px; /* Add padding for better click area */
     color: black; /* Text color */
     text-decoration: none; /* Remove underline from links */
     border-radius: 4px; /* Rounded corners */
-    border: 1px;
-    border-color:black;
+    transition: background-color 0.3s; /* Smooth transition for hover */
 }
 
 .category-item:hover {
     background-color: #f0f0f0; /* Light gray background on hover */
 }
 
-
 .banner {
     position: relative; /* Ensure the banner can contain absolutely positioned elements */
-    width: 100%; /* Set to desired width, could be a fixed size or percentage */
-    height: 500px; /* Set desired height */
+    width: 100%; /* Full width */
+    height: 53.5vh; /* Responsive height: 40% of viewport height */
     overflow: hidden; /* Hide overflow if the image doesn't fit */
-  }
-  
-  .banner img {
+}
+
+.banner img {
     position: absolute; /* Positioning the image absolutely */
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
@@ -38,5 +36,29 @@
     height: 100%; /* Make image height 100% of the container */
     object-fit: cover; /* Cover the entire area while maintaining aspect ratio */
     transform: translate(-50%, -50%); /* Center the image */
-  }
-  
+}
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+    .category-item {
+        padding: 10px 20px; /* Increase padding on smaller screens */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .banner {
+        height: 30vh; /* Reduce height on smaller screens */
+        display:none;
+    }
+}
+
+@media (max-width: 480px) {
+    .category-item {
+        padding: 12px 15px; /* Further adjust padding */
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .banner {
+        height: 25vh; /* Further reduce height on mobile */
+        display: none;
+    }
+}
