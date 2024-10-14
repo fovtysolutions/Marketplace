@@ -1,0 +1,15 @@
+.blogdashboard {
+    background-color: #fff;
+}
+.heading {
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.blogparagraph {
+    white-space: pre-line; text-align:justify
+}
