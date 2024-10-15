@@ -49,7 +49,7 @@
   display: flex;
   align-items: center; /* Align icons vertically */
   gap: 10px; /* Space between buttons */
-  padding-left: 150px;
+  padding-left: 40%;
 }
 
 .button-group {
@@ -115,8 +115,8 @@
 
 .right-section {
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
-  margin-right: 10px; /* Adjust margin as needed */
+  justify-content:center; /* Align buttons to the right */
+  margin-left:40%;
 }
 
 .bottom-button-group {
