@@ -49,7 +49,7 @@ const FilterSection = ({ title, items, selectedFilters, setSelectedFilters }) =>
                             onClick={() => handleFilter(item)} 
                             style={{ fontWeight: selectedFilters.includes(item) ? 'bold' : 'normal' }}
                         >
-                            - {item}
+                            {item}
                         </li>
                     ))}
                     {items.length > displayCount && (
