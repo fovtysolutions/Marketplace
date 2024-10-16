@@ -10,7 +10,6 @@ import ListViewItem from "../hooks/ListItem";
 const RightSideVendor = ({ data }) => {
     const [isVisibleGrid, setGridView] = useState(true);
     const [isVisibleListView, setListView] = useState(false);
-    const itemsPerPage = 7;
 
     const items = data.length > 0 ? data : []; // Use the passed data
     const itemLength = items.length; // Length of the array
@@ -34,7 +33,7 @@ const RightSideVendor = ({ data }) => {
     return (
         <div className='rightsideven'>
             <div className='navigationven'>
-                Home / {data[0].category}
+                Home / data
             </div>
             <div className='gridviewven'>
                 <h5 className="pagetitleven">All Products ({itemLength} Products)</h5>
