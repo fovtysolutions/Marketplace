@@ -14,12 +14,11 @@ export default function Heroleft() {
                   <div className="sidebar-content">
                     <ul className="category-list">
                       <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Agriculture</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Building Construction</a></li>
+                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Construction</a></li>
                       <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Electrical Equipment</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Apparel & Accessories </a></li>
+                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Apparel</a></li>
                       <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Automobile & Motorcycles</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Beauty</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Personal Care</a></li>
+                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Personal Care & Beauty</a></li>
                       <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Chemicals</a></li>
                       <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>More Categories</a></li>
                     </ul>

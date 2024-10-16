@@ -112,9 +112,10 @@
    background-color: #ffffff;
  }
  .sourcenow-sec .cnt-1{
-   background-image: url("../images/mp/sourcenow/farniture.png");
-   height: 390px;
+   background-image: url("../images/mp/sourcenow/furniture-2.png");
+   height: 440px;
    padding: 30px;
+   background-repeat: no-repeat;
  }
  .sourcenow-sec .cnt-1 .title{
    font-weight: 500;
@@ -134,11 +135,11 @@
  .source-product-cnt{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-evenly;
+   justify-content: space-between;
    /* padding: 20px 0px; */
  }
  .source-product-cnt img{
-   width: 150px;
+   width: 190px;
  }
  .source-product-cnt p{
    display: block;
@@ -169,6 +170,22 @@ line-height: 1.8;
 .quotation-txt a{
 font-size: 16px;
 color:#ffffff;
+}
+.quotation-form form{
+  background-color: #ffffff;
+  color: #425a8b;
+  padding: 20px 50px;
+}
+.quotation-form .btn{
+  background-color: #425a8b;
+  color: #ffffff;
+ 
+}
+.quotation-form .title-form-qut{
+  font-size: 30px;
+}
+.quotation-form .form-control{
+  border-radius: 0px;
 }
 
 

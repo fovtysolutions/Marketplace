@@ -35,7 +35,7 @@ export default function Sourcenow() {
 						</div>
             </div>
             <div className="row">
-            <div className="trd-product-cnt">
+            <div className="source-product-cnt">
 							<div className="trd-product-item">
 								<img src="../images/mp/sourcenow/s8.png" alt="product" />
 								<p>Supermarket Shelf</p>

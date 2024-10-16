@@ -1,0 +1,25 @@
+# Use mod_rewrite to enable pretty URLs
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirect all requests to index.html
+  RewriteBase /
+
+  # Ignore existing files and directories
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Redirect to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Cache busting to force the browser to load the latest files
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 year"
+
+  # Ensure index.html is always fresh
+  <FilesMatch "index.html">
+    ExpiresDefault "access plus 0 seconds"
+  </FilesMatch>
+</IfModule>
