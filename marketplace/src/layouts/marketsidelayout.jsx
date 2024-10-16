@@ -8,7 +8,7 @@ import PrivateRoutes from '../Routes/PrivateRoutes';
 function Grituppside() {
   return (
     <>
-      <div class="page-wrapper">
+      <div className="page-wrapper">
         <Routes>
           <Route path='/' element={<PrivateRoutes />}>
             {allPrivateRoutes.map((route) => < Route path={route.path} element={route.component} key={route.path} />)}

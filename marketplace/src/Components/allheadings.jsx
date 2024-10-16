@@ -19,12 +19,12 @@ const Allheadings = ({ pageChange , highlight='no', subtitle='no'}) => {
  
     return (
         <>
-            <div class="text-center">
+            <div className="text-center">
                 <h2>
                     {selectedPage.heading}
-                    <span style={{ display: highlight === 'no' ? 'none' : 'inline' }} class="color-primary-1 underline">{selectedPage.heading}</span>
+                    <span style={{ display: highlight === 'no' ? 'none' : 'inline' }} className="color-primary-1 underline">{selectedPage.heading}</span>
                 </h2>
-                <p style={{ display: subtitle === 'no' ? 'none' : 'inline-block' }} class="opacity">
+                <p style={{ display: subtitle === 'no' ? 'none' : 'inline-block' }} className="opacity">
                     {selectedPage.subtitle}
                 </p>
             </div>

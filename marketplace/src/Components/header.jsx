@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState, } from "react";
 import { useLocation } from 'react-router-dom';
 import Afterlogin from "./afterlogin";
 import "./fix.css";
-import Topbar from "./header/Topbar";
+// import Topbar from "./header/Topbar";
 import Sidebar from "./header/Sidebar";
 import Mainheader from "./header/Mainheader";
+import Bottombar from "./header/Bottombar";
 
 const Header = () => {
     const location = useLocation();
@@ -17,6 +18,7 @@ const Header = () => {
             {/* <Topbar/> */}
             {/* <Sidebar/> */}
             <Mainheader/>
+            <Bottombar/>
         </>
     );
 };

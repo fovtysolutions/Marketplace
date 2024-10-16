@@ -122,8 +122,8 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
     return (
         <>
             <div style={{ display: selectedLevel === 'other' ? 'none' : 'block' }}>
-                <label htmlFor="CompanyWebsite">Education Level<span class="color-red">*</span></label>
-                <select name="edu_level" id="CompanyWebsite" required="" class="input w-input" value={allFormData.edu_level} onChange={handleLevelChange} disabled={selectedLevel === 'other'} >
+                <label htmlFor="CompanyWebsite">Education Level<span className="color-red">*</span></label>
+                <select name="edu_level" id="CompanyWebsite" required="" className="input w-input" value={allFormData.edu_level} onChange={handleLevelChange} disabled={selectedLevel === 'other'} >
                     <option value="">{allFormData.edu_level === '' ? 'Select education level':allFormData.edu_level}</option>
                     {fetchData.map(level =>
                         level.type === 'Degree' ? (
@@ -142,8 +142,8 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div style={{ display: selectedLevel === 'other' ? 'none' : 'block' }}>
-                <label htmlFor="selectMajor">Degree<span class="color-red">*</span></label>
-                <select name="degree" id="selectMajor" required="" class="input w-input" value={allFormData.degree} onChange={handleDgreeChange} disabled={selectedLevel === '' || selectedLevel === 'other'}>
+                <label htmlFor="selectMajor">Degree<span className="color-red">*</span></label>
+                <select name="degree" id="selectMajor" required="" className="input w-input" value={allFormData.degree} onChange={handleDgreeChange} disabled={selectedLevel === '' || selectedLevel === 'other'}>
                     <option value="">{allFormData.degree === '' ? 'Select education level':allFormData.degree}</option>
                     {fetchData.map(degree =>
                         degree.type === selectedLevel ? (
@@ -161,8 +161,8 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div style={{ display: selectedLevel === 'other' ? 'none' : 'block' }}>
-                <label htmlFor="selectBranch">Branch<span class="color-red">*</span></label>
-                <select name="branch" id="selectBranch" required="" class="input w-input" disabled={selectedDegree === '' || selectedLevel === 'other'} value={allFormData.branch} onChange={handleChange}>
+                <label htmlFor="selectBranch">Branch<span className="color-red">*</span></label>
+                <select name="branch" id="selectBranch" required="" className="input w-input" disabled={selectedDegree === '' || selectedLevel === 'other'} value={allFormData.branch} onChange={handleChange}>
                     <option value="">{allFormData.branch === '' ? 'Select education level':allFormData.branch}</option>
                     {fetchData.map(branch =>
                         branch.type === selectedDegree ? (
@@ -180,9 +180,9 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div id="otherEduLevel" style={{ display: selectedLevel === 'other' ? 'block' : 'none' }}>
-                <label htmlFor="CompanyEduLevel">Education Level's Other<span class="color-red">*</span></label>
-                <input type="text" class="input w-input" maxLength="256" name="edu_level" placeholder="Enter Here" id="CompanyEduLevel" value={allFormData.edu_level} onChange={handleChange} disabled={!selectedLevel === 'other'} />
-                <a class="d-flex justify-content-end text-primary curser" onClick={otherReset} >Reset</a>
+                <label htmlFor="CompanyEduLevel">Education Level's Other<span className="color-red">*</span></label>
+                <input type="text" className="input w-input" maxLength="256" name="edu_level" placeholder="Enter Here" id="CompanyEduLevel" value={allFormData.edu_level} onChange={handleChange} disabled={!selectedLevel === 'other'} />
+                <a className="d-flex justify-content-end text-primary curser" onClick={otherReset} >Reset</a>
                 <div 
                     className={`${errorHandle === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle === formID ? 'block' : 'none' }}
@@ -193,8 +193,8 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div id="otherMajor" style={{ display: selectedLevel === 'other' ? 'block' : 'none' }}>
-                <label htmlFor="Companymajor">Degree's Other<span class="color-red">*</span></label>
-                <input type="text" class="input w-input" maxLength="256" name="degree" placeholder="Enter Here" id="Companymajor" value={allFormData.degree} onChange={handleChange} disabled={!selectedLevel === 'other'} />
+                <label htmlFor="Companymajor">Degree's Other<span className="color-red">*</span></label>
+                <input type="text" className="input w-input" maxLength="256" name="degree" placeholder="Enter Here" id="Companymajor" value={allFormData.degree} onChange={handleChange} disabled={!selectedLevel === 'other'} />
                 <div 
                     className={`${errorHandle === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle === formID ? 'block' : 'none' }}
@@ -205,8 +205,8 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div id="otherBranch" style={{ display: selectedLevel === 'other' ? 'block' : 'none' }}>
-                <label htmlFor="CompanyBranch">Branch's Other<span class="color-red">*</span></label>
-                <input type="text" class="input w-input" maxLength="256" name="branch" placeholder="Enter Here" id="CompanyBranch" value={allFormData.branch} onChange={handleChange} disabled={!selectedLevel === 'other'} />
+                <label htmlFor="CompanyBranch">Branch's Other<span className="color-red">*</span></label>
+                <input type="text" className="input w-input" maxLength="256" name="branch" placeholder="Enter Here" id="CompanyBranch" value={allFormData.branch} onChange={handleChange} disabled={!selectedLevel === 'other'} />
                 <div 
                     className={`${errorHandle === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle === formID ? 'block' : 'none' }}
@@ -217,10 +217,10 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div>
-                <label htmlFor="institution">Institute / University<span class="color-red">*</span></label>
+                <label htmlFor="institution">Institute / University<span className="color-red">*</span></label>
                 <input 
                     type="text" 
-                    class="input w-input" 
+                    className="input w-input" 
                     maxLength="256" 
                     name="institution" 
                     placeholder="Type your Institute name" 
@@ -239,10 +239,10 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div ref={datePickerRefs.period_from} style={{ position: 'relative', marginBottom: '20px' }}>
-                <label htmlFor="period_from">From<span class="color-red">*</span></label>
+                <label htmlFor="period_from">From<span className="color-red">*</span></label>
                 <input 
                     type="text" 
-                    class="input w-input" 
+                    className="input w-input" 
                     maxLength="256" 
                     name="period_from" 
                     placeholder="09/12/1999" 
@@ -271,10 +271,10 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
             </div>
 
             <div ref={datePickerRefs.period_to} style={{ position: 'relative', marginBottom: '20px' }}>
-                <label htmlFor="period_to">To<span class="color-red">*</span></label>
+                <label htmlFor="period_to">To<span className="color-red">*</span></label>
                 <input 
                     type="text" 
-                    class="input w-input" 
+                    className="input w-input" 
                     maxLength="256" 
                     name="period_to" 
                     placeholder="09/12/1999" 
@@ -306,7 +306,7 @@ const Partone = ({formData, onPartOneChange, formID, SavedDataphase2part1, error
                 <label htmlFor="cgpasgpa">CGPA / SGPA</label>
                 <input 
                     type="text" 
-                    class="input w-input" 
+                    className="input w-input" 
                     maxLength="256" 
                     name="cgpa_sgpa" 
                     placeholder="7.5/4.5" 

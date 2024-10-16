@@ -5,7 +5,7 @@ import PrivateRoutes from '../Routes/PrivateRoutes';
 function Userside() {
   return (
     <>
-      <div class="page-wrapper">
+      <div className="page-wrapper">
         <Routes>
           <Route path='/user' element={<PrivateRoutes />}>
             {allUserRoutes.map((route) => < Route path={route.path} element={route.component} key={route.path} />)}

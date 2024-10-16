@@ -146,14 +146,14 @@ const Createresume = () => {
     
     return (
         <>
-            <div class="section short wf-section">
-                <div class="container-default">
-                    <div class=" grid-form-container canhidden">
-                        <div class="form-text-containe cancontainer">
-                            <div class="back-btn canbackbtn">
-                            <a  class="btn canbtna">
-                                <svg class="canwhite" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="mask0_20_62" class="canmask" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
+            <div className="section short wf-section">
+                <div className="container-default">
+                    <div className=" grid-form-container canhidden">
+                        <div className="form-text-containe cancontainer">
+                            <div className="back-btn canbackbtn">
+                            <a  className="btn canbtna">
+                                <svg className="canwhite" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <mask id="mask0_20_62" className="canmask" maskUnits="userSpaceOnUse" x="0" y="0" width="20"
                                         height="20">
                                         <rect width="20" height="20" />
                                     </mask>
@@ -164,21 +164,21 @@ const Createresume = () => {
                                 </svg>
                                 Back</a>
                             </div>
-                            <h1 class="heading-size-1 opacity canpadding">
-                                Submit your <span class="color-primary-1 underline">resume</span>
+                            <h1 className="heading-size-1 opacity canpadding">
+                                Submit your <span className="color-primary-1 underline">resume</span>
                             </h1>
-                            <p class="opacity">
+                            <p className="opacity">
                                 To apply for the position, please fill out the accompanying form and submit your resume. If
                                 you have any questions or require assistance throughout the process, don't hesitate to reach
                                 out to our support team at <a href="support@gritupp.com"> support@gritupp.com</a><br/>
                                 Your application is important to us, and we appreciate your interest in becoming part of our team.
                             </p>
                         </div>
-                        <div id="scrolldiv" class="main-resume-frame canscrolldiv">
-                            <div class="align-left opacity canmargin">
+                        <div id="scrolldiv" className="main-resume-frame canscrolldiv">
+                            <div className="align-left opacity canmargin">
                                 <span id="changenumber">{countfor}</span>/<span>6</span>
                             </div>
-                            <div id="resumePage" class="phase-container canwidth">
+                            <div id="resumePage" className="phase-container canwidth">
                                 <Uploadresume 
                                     showthis={countfor} 
                                     slideshow={countback}
@@ -225,12 +225,12 @@ const Createresume = () => {
                                 ></Phasefive>
                             </div>
                         </div>
-                        <div class="canfooter">
-                            <div class="all_Btns">
-                                <div> <button id="backButton" style={{ opacity: countfor === 1 ? 0.5 : 1 }} disabled={countfor === 1} onClick={decrease} class="buttonBNS">Back</button></div>
+                        <div className="canfooter">
+                            <div className="all_Btns">
+                                <div> <button id="backButton" style={{ opacity: countfor === 1 ? 0.5 : 1 }} disabled={countfor === 1} onClick={decrease} className="buttonBNS">Back</button></div>
                                 <div>
-                                    <button id="skipButton" onClick={increase} style={{ display: countfor === 1 ? 'inline' : 'none' }} class="buttonBNS canmarginright">Skip</button>
-                                    <button id="nextButtonreal" onClick={(event) => showError === 'success' ? null : handleSubmit(event)} class="buttonBNS">Next</button>
+                                    <button id="skipButton" onClick={increase} style={{ display: countfor === 1 ? 'inline' : 'none' }} className="buttonBNS canmarginright">Skip</button>
+                                    <button id="nextButtonreal" onClick={(event) => showError === 'success' ? null : handleSubmit(event)} className="buttonBNS">Next</button>
                                 </div> 
                             </div>
                         </div>

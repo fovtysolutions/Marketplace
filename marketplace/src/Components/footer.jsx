@@ -1,90 +1,182 @@
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+// import {
+// 	FaFacebookF,
+// 	FaInstagram,
+// 	FaTwitter,
+// 	FaLinkedinIn,
+// } from "react-icons/fa";
+import "../assets/css/Footer.css";
 
 const Footer = () => {
-    return (
-        <>
-            <footer className="footer">
-      <div className="footer-1">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3 width-25 mb-30">
-            <div className="mb-20">
-              <img alt="Ecom" src="../images/template/logo.svg" />
-            </div>
-              {/* <div className="font-md mb-20 color-gray-900"><strong className="font-md-bold">Address:</strong> 502 New Design Str, Melbourne, San Francisco, CA 94110, United States</div> */}
-              <div className="font-md mb-20 color-gray-900"><strong className="font-md-bold">Phone:</strong> (+01) 123-456-789</div>
-              <div className="font-md mb-20 color-gray-900"><strong className="font-md-bold">E-mail:</strong> contact@ecom-market.com</div>
-              <div className="font-md mb-20 color-gray-900"><strong className="font-md-bold">Hours:</strong> 8:00 - 17:00, Mon - Sat</div>
-              
-            </div>
-            <div className="col-lg-3 width-20 mb-30">
-              <h4 className="mb-30 color-gray-1000">Make Money</h4>
-              <ul className="menu-footer">
-                <li><a href="page-about-us.html"> Mission &amp; Vision</a></li>
-                <li><a href="page-about-us.html">Our Team</a></li>
-                <li><a href="page-careers.html">Careers</a></li>
-                <li><a href="#">Press &amp; Media</a></li>
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Testimonials</a></li>
-              </ul>
-            </div>
-            <div className="col-lg-3 width-16 mb-30">
-              <h4 className="mb-30 color-gray-1000">Company</h4>
-              <ul className="menu-footer">
-                <li><a href="blog-2.html">Our Blog</a></li>
-                <li><a href="#">Plans &amp; Pricing</a></li>
-                <li><a href="#">Knowledge Base</a></li>
-                <li><a href="#">Cookie Policy</a></li>
-                <li><a href="#">Office Center</a></li>
-                <li><a href="blog.html">News &amp; Events</a></li>
-              </ul>
-            </div>
-            <div className="col-lg-3 width-16 mb-30">
-              <h4 className="mb-30 color-gray-1000">My account</h4>
-              <ul className="menu-footer">
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">Editor Help</a></li>
-                <li><a href="#">Community</a></li>
-                <li><a href="#">Live Chatting</a></li>
-                <li><a href="page-contact.html">Contact Us</a></li>
-                <li><a href="#">Support Center</a></li>
-              </ul>
-            </div>
-            <div className="col-lg-3 width-23">
-              <h4 className="mb-30 color-gray-1000">Stay Connected</h4>
-              <div>
-                <div className="mt-30">
-                <a className="icon-socials" href="#"><FaFacebookF /></a>
-                <a className="icon-socials" href="#"><FaInstagram /></a>
-                <a className="icon-socials" href="#"><FaTwitter /></a>
-                <a className="icon-socials" href="#"><FaLinkedinIn /></a>
-              </div>
-              <div className="mt-30">
-                <img src="../images/mp/footer-4.png" alt="Ecom"/>
-              </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container">
-          <div className="footer-bottom mt-20">
-            <div className="row">
-              <div className="col-lg-6 col-md-12 text-center text-lg-start"><span className="color-gray-900 font-sm">Copyright &copy; 2022 Ecom Market. All rights reserved.</span></div>
-              <div className="col-lg-6 col-md-12 text-center text-lg-end">
-                <ul className="menu-bottom">
-                  <li><a className="font-sm color-gray-900" href="page-term.html">Conditions of Use</a></li>
-                  <li><a className="font-sm color-gray-900" href="page-term.html">Privacy Notice</a></li>
-                  <li><a className="font-sm color-gray-900" href="page-careers.html">Interest-Based Ads</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-        </>
-    );
+	return (
+		<>
+			<footer className="footer">
+				<div className="container-fluid">
+					<div className="row">
+						<div className="col-12 col-md-3">
+							<div className="mb-3">
+								<h4 className="mb-2 title-m">Discover Products & Suppliers</h4>
+								<ul className="menu-footer">
+									<li className="mb-1">
+										<a href="#">Industry Sites</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Regional Channels</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Special Channel</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Custom Products</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Video Show</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Secured Trading Service</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Business Guide</a>
+									</li>
+								</ul>
+							</div>
+							<h4 className="mb-2 title-m">Featured Service</h4>
+							<ul className="menu-footer">
+								<li className="mb-1">
+									<a href="#">Star Buyer</a>
+								</li>
+								<li className="mb-1">
+									<a href="#">Trade Resources</a>
+								</li>
+								<li className="mb-1">
+									<a href="#">Logistics Partners</a>
+								</li>
+							</ul>
+						</div>
+						<div className="col-12 col-md-3">
+							<div className="mb-3">
+								<h4 className="mb-2 title-m">About Us</h4>
+								<ul className="menu-footer">
+									<li className="mb-1">
+										<a href="#">About Made-in-China.com</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Site Map</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Trademark</a>
+									</li>
+									<li className="mb-1">
+										<a href="#">Friendly Links</a>
+									</li>
+								</ul>
+							</div>
+							<h4 className="mb-2 title-m">Help</h4>
+							<ul className="menu-footer">
+								<li className="mb-1">
+									<a href="#">FAQ</a>
+								</li>
+								<li className="mb-1">
+									<a href="#">Contact Us</a>
+								</li>
+								<li className="mb-1">
+									<a href="#">加入高级会员</a>
+								</li>
+								<li className="mb-1">
+									<a href="#">Submit a Complaint</a>
+								</li>
+							</ul>
+						</div>
+						<div className="col-12 col-md-3">
+							<div className="mb-3">
+								<h4 className="mb-2 title-m">Language Options</h4>
+								<div className="d-flex">
+									<div className="col-6">
+										<ul className="menu-footer">
+											<li className="mb-1">
+												<a href="#">Español</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Português</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Français</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Русский язык</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Italiano</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Deutsch</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Nederlands</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">العربية</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">한국어</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">日本語</a>
+											</li>
+										</ul>
+									</div>
+									<div className="col-6">
+										<ul className="menu-footer">
+											<li className="mb-1">
+												<a href="#">हिन्दी</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">ภาษาไทย</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Türkçe</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Tiếng Việt</a>
+											</li>
+											<li className="mb-1">
+												<a href="#">Bahasa Indonesia</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="col-12 col-md-3">
+							<div className="mb-3">
+								{/* <img src="../images/mp/f-4.png" alt="market place" /> */}
+								<div className="footer-4-cnt">
+									<div className="f-4-title">
+										<a href="#"></a>
+									</div>
+									<div className="sub-cnt">
+										<div className="sub-title">Co-brands </div>
+									</div>
+                  <div className="brand-1">
+										<a href="#"></a>
+									</div>
+                  <div className="brand-2">
+										<a href="#"></a>
+									</div>
+                  <div className="brand-3">
+										<a href="#"></a>
+									</div>
+                  <div className="brand-4">
+										<a href="#"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</>
+	);
 };
 
 export default Footer;

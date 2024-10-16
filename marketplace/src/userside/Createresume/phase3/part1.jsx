@@ -141,8 +141,8 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
     return (
         <>
             <div id="Jobtitle">
-                <label for="job_title">Job Title<span class="color-red">*</span></label>
-                <input type="text" class="input w-input" maxlength="256" name="job_title" placeholder="Enter Here" id="job_title" value={allFormData.job_title} onChange={handleChange} />
+                <label for="job_title">Job Title<span className="color-red">*</span></label>
+                <input type="text" className="input w-input" maxlength="256" name="job_title" placeholder="Enter Here" id="job_title" value={allFormData.job_title} onChange={handleChange} />
                 <div 
                     className={`${errorHandle1 === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle1 === formID ? 'block' : 'none' }}
@@ -152,8 +152,8 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
                 </div>
             </div>
             <div>
-                <label for="department">Department<span class="color-red">*</span></label>
-                <select name="department" id="department" required="" class="input w-input" value={allFormData.department} onChange={handleChange}>
+                <label for="department">Department<span className="color-red">*</span></label>
+                <select name="department" id="department" required="" className="input w-input" value={allFormData.department} onChange={handleChange}>
                         <option value="" >Select Department</option>
                         {fetchData.map(depart =>
                             depart.type === 'department' ? (
@@ -171,8 +171,8 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
             </div>
 
             <div id="Companies">
-                <label for="Company">Company<span class="color-red">*</span></label>
-                <input type="text" class="input w-input" maxlength="256" name="company" placeholder="Enter Here" id="Company" value={allFormData.company} onChange={handleChange} />
+                <label for="Company">Company<span className="color-red">*</span></label>
+                <input type="text" className="input w-input" maxlength="256" name="company" placeholder="Enter Here" id="Company" value={allFormData.company} onChange={handleChange} />
                 <div 
                     className={`${errorHandle1 === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle1 === formID ? 'block' : 'none' }}
@@ -183,12 +183,12 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
             </div>
 
             <div>
-                <label for="period_from">Period<span class="color-red">*</span></label>
-                <div class="shift-from-to">
-                    <div  ref={datePickerRefs.period_from} style={{ position: 'relative', marginBottom: '20px' }} class="canphase3date">
+                <label for="period_from">Period<span className="color-red">*</span></label>
+                <div className="shift-from-to">
+                    <div  ref={datePickerRefs.period_from} style={{ position: 'relative', marginBottom: '20px' }} className="canphase3date">
                         <input 
                             type="text" 
-                            class="input w-input" 
+                            className="input w-input" 
                             maxlength="256" 
                             name="period_from" 
                             placeholder="09/12/1999" 
@@ -215,10 +215,10 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
                                 { errorHandle1 === formID ? errorHandle.period_from : '' }
                         </div>
                     </div>
-                    <div  ref={datePickerRefs.period_to} style={{ position: 'relative', marginBottom: '20px' }} class="canphase3date">
+                    <div  ref={datePickerRefs.period_to} style={{ position: 'relative', marginBottom: '20px' }} className="canphase3date">
                         <input 
                             type="text" 
-                            class="input w-input" 
+                            className="input w-input" 
                             maxlength="256" 
                             name="period_to" 
                             placeholder="09/12/1999" 
@@ -238,9 +238,9 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
                                 />
                             </div>
                         )}
-                        <div class="canphase3Present">
+                        <div className="canphase3Present">
                             <input type="checkbox" name="period_to" id="check_present" onChange={handlePresentChange} value={currentDate} />
-                            <label class="canphase3Presentlabel" id="present" for="check_present">Present</label>
+                            <label className="canphase3Presentlabel" id="present" for="check_present">Present</label>
                         </div>
                         <div 
                             className={`${errorHandle1 === formID ? 'text-danger' : ''}`}
@@ -253,11 +253,11 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
                 </div>
             </div>
 
-            <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" class="input-container-full-width">
+            <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" className="input-container-full-width">
                 <label for="inputField">Role and Responsibility</label>
                 <textarea 
                     type="text" 
-                    class="input w-input" 
+                    className="input w-input" 
                     name="rol_responsibility" 
                     onChange={handletextChange}
                     placeholder="Something Write Yourself...." 
@@ -268,7 +268,7 @@ const Partone = ({formID, formData, onPartOneChange, SavedDataphase3part1, error
                     value={allFormData.rol_responsibility}
                     required=""
                 ></textarea>
-                <span class="canphase1fontsize" style={{ color: charCount > 799 ? 'red' : 'green' }} id="textMax">Maximum Length Should Be Below <span id="characterCount"> {charCount}</span> characters</span>
+                <span className="canphase1fontsize" style={{ color: charCount > 799 ? 'red' : 'green' }} id="textMax">Maximum Length Should Be Below <span id="characterCount"> {charCount}</span> characters</span>
                 <div 
                     className={`${errorHandle1 === formID ? 'text-danger' : ''}`}
                     style={{ display: errorHandle1 === formID ? 'block' : 'none' }}

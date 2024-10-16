@@ -86,15 +86,15 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
     
     return (
       <>
-        <div data-w-id="" id="phaseContainer" class="form-container" style={{ display: showthis === 6 ? 'block' : 'none' }}>
-          <div class="w-form">
+        <div data-w-id="" id="phaseContainer" className="form-container" style={{ display: showthis === 6 ? 'block' : 'none' }}>
+          <div className="w-form">
             <div id="phaseone" className={`phase-container ${slideshow === 12 ? 'slide-left' : ''}`} >
               <form id="phase1form">
-                <div id="job-information" class="w-layout-grid grid-form">
-                  <h2 id="w-node-a3d1ad77-e5aa-114b-bcd7-cde3db1bb746-270281fa" class="form-subtitle">5. Preferred Employment </h2>
+                <div id="job-information" className="w-layout-grid grid-form">
+                  <h2 id="w-node-a3d1ad77-e5aa-114b-bcd7-cde3db1bb746-270281fa" className="form-subtitle">5. Preferred Employment </h2>
                   <div>
-                    <label for="department">Department<span class="color-red">*</span></label>
-                    <select name="department" id="department" required="" class="input w-input" value={allFormData.department} onChange={handleChange}>
+                    <label for="department">Department<span className="color-red">*</span></label>
+                    <select name="department" id="department" required="" className="input w-input" value={allFormData.department} onChange={handleChange}>
                             <option value="" >Select Department</option>
                             {fetchData.map(depart =>
                                 depart.type === 'department' ? (
@@ -115,8 +115,8 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                     Locationss={JSON.parse(SavedDataphase5.location) === null ? [] : JSON.parse(SavedDataphase5.location)}
                   />
                   <div>
-                    <label for="work_mode">Work Mode<span class="color-red">*</span></label>
-                    <select name="work_mode" id="work_mode" required="" class="input w-input" value={allFormData.work_mode} onChange={handleChange}>
+                    <label for="work_mode">Work Mode<span className="color-red">*</span></label>
+                    <select name="work_mode" id="work_mode" required="" className="input w-input" value={allFormData.work_mode} onChange={handleChange}>
                             <option value="" >Select Working Mode</option>
                             {fetchData.map(work =>
                                 work.type === 'work_mode' ? (
@@ -139,8 +139,8 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                     sendToTime={handleToData}
                   />                 
                   <div>
-                    <label for="notice_period">Notice Period<span class="color-red">*</span></label>
-                    <select name="notice_period" id="notice_period" required="" class="input w-input" value={allFormData.notice_period} onChange={handleChange}>
+                    <label for="notice_period">Notice Period<span className="color-red">*</span></label>
+                    <select name="notice_period" id="notice_period" required="" className="input w-input" value={allFormData.notice_period} onChange={handleChange}>
                       <option value="" >Select Notice Period</option>
                       {fetchData.map(data =>
                           data.type === 'notice_period' ? (
@@ -156,13 +156,13 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                             { errorHandle5 === 'success' ? '' : errorHandle5.notice_period }
                     </div>
                   </div>
-                  <div class="canphase2relative">
+                  <div className="canphase2relative">
                     <label htmlFor="current_salary">Current Salary
-                      <svg onMouseOver={() => handleShowSick('Csalary')} class="details-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                      <svg onMouseOver={() => handleShowSick('Csalary')} className="details-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
                     </label>
                       <input 
                         type="number" 
-                        class="input w-input" 
+                        className="input w-input" 
                         name="current_salary" 
                         placeholder="Enter here"
                         id="current_salary" 
@@ -170,7 +170,7 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                         value={allFormData.current_salary} 
                         onChange={(e) => handleChangeC(e,'Csalary')}
                       />
-                      <div id="instructionsDropdownExpected" class="dropDown-content cannotdisplay" style={{ display: showInstructionC === 'show' ? 'block' : 'none' }}>
+                      <div id="instructionsDropdownExpected" className="dropDown-content cannotdisplay" style={{ display: showInstructionC === 'show' ? 'block' : 'none' }}>
                         <p >Instructions:</p>
                         <ul>
                             <li>Enter your expected salary in numbers.</li>
@@ -185,13 +185,13 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                               { errorHandle5 === 'success' ? '' : errorHandle5.expected_salary }
                       </div>
                   </div>
-                  <div class="canphase2relative">
-                    <label htmlFor="expected_salary">Expected Salary<span class="color-red">*</span>
-                      <svg onMouseOver={() => handleShowSick('Esalary')} class="details-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
+                  <div className="canphase2relative">
+                    <label htmlFor="expected_salary">Expected Salary<span className="color-red">*</span>
+                      <svg onMouseOver={() => handleShowSick('Esalary')} className="details-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg>
                     </label>
                       <input 
                         type="number" 
-                        class="input w-input" 
+                        className="input w-input" 
                         name="expected_salary" 
                         placeholder="Enter here"
                         id="expected_salary" 
@@ -203,7 +203,7 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                         value={allFormData.expected_salary} 
                         onChange={(e) => handleChangeC(e,'Esalary')}
                       />
-                      <div id="instructionsDropdownExpected" class="dropDown-content cannotdisplay" style={{ display: showInstructionE === 'show' ? 'block' : 'none' }}>
+                      <div id="instructionsDropdownExpected" className="dropDown-content cannotdisplay" style={{ display: showInstructionE === 'show' ? 'block' : 'none' }}>
                         <p >Instructions:</p>
                         <ul>
                             <li>Enter your expected salary in numbers.</li>
@@ -218,16 +218,16 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                               { errorHandle5 === 'success' ? '' : errorHandle5.expected_salary }
                       </div>
                   </div>
-                  <div class="container">
-                    <label for="salary_mode">Salary Mode <span class="color-red">*</span></label>
-                    <div class="salaryModemain">
-                      <div class="flex salaryModeDiv">
+                  <div className="container">
+                    <label for="salary_mode">Salary Mode <span className="color-red">*</span></label>
+                    <div className="salaryModemain">
+                      <div className="flex salaryModeDiv">
                           <input type="radio" name="salary_mode" id="selectSalary2" value="Monthly" checked={allFormData.salary_mode === 'Monthly'} onChange={handleChange}/>
-                          <label for="selectSalary2" class="salaryModeRadio">Monthly</label>
+                          <label for="selectSalary2" className="salaryModeRadio">Monthly</label>
                       </div>
-                      <div class="flex salaryModeDiv">
+                      <div className="flex salaryModeDiv">
                           <input type="radio" name="salary_mode" id="selectSalary3" value="Annualy" checked={allFormData.salary_mode === 'Annualy'} onChange={handleChange} />
-                          <label for="selectSalary3" class="salaryModeRadio">Annually</label>
+                          <label for="selectSalary3" className="salaryModeRadio">Annually</label>
                       </div>
                     </div>
                     <div 
@@ -239,10 +239,10 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                     </div>
                   </div>
                   <div>
-                    <label htmlFor="experience">Experience<span class="color-red">*</span></label>
+                    <label htmlFor="experience">Experience<span className="color-red">*</span></label>
                       <input 
                         type="number" 
-                        class="input w-input" 
+                        className="input w-input" 
                         name="experience" 
                         placeholder="Enter here"
                         id="experience" 
@@ -261,10 +261,10 @@ const Phase5 = ({showthis=6,slideshow=12,sendDataToParentP5,errorHandle5='succes
                               { errorHandle5 === 'success' ? '' : errorHandle5.experience }
                       </div>
                   </div>
-                  <div class="input-container-full-width" id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa">
+                  <div className="input-container-full-width" id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa">
                     <p>Accept given terms and conditions:</p>
-                    <div class="terms-conditions">
-                      <div class="checkbox">
+                    <div className="terms-conditions">
+                      <div className="checkbox">
                         <input type="checkbox" name="acceptation" id="check-info" required value={allFormData.acceptation} onChange={handleChange} checked={allFormData.acceptation === 'Accept'}/>
                         <label for="check-info">The information provided is authentic and has been authored by you.</label>
                       </div>

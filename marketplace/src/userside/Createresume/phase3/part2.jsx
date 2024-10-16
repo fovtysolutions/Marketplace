@@ -55,7 +55,7 @@ const Parttwo = ({formID, Skills}) => {
             <label for="skill-input">Skills<span></span></label>
             <input 
               type="text" 
-              class="input w-input skillvalue" 
+              className="input w-input skillvalue" 
               maxlength="256" 
               name="skills" 
               data-name="Name" 
@@ -67,24 +67,24 @@ const Parttwo = ({formID, Skills}) => {
             />
           </div>
           <div>
-            <span class="canphase3Skills"></span>
+            <span className="canphase3Skills"></span>
           </div>
-          <div class="addvalueskill w-100 flex justify-content-end canphase2Skillbtn">
-            <span class="skillvalueclick button-primary canphase2Skill2btn" onClick={handleAddSkills}>Add</span>
+          <div className="addvalueskill w-100 flex justify-content-end canphase2Skillbtn">
+            <span className="skillvalueclick button-primary canphase2Skill2btn" onClick={handleAddSkills}>Add</span>
           </div>
-          <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" class="input-container-full-width">
+          <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" className="input-container-full-width">
             <p>SKILLS:</p>
-            <ul class="all_skill_tags canphase3SkillsDisplay skill-tags">
+            <ul className="all_skill_tags canphase3SkillsDisplay skill-tags">
               {Skillss.map((cert, index) => ( 
                 <li>
-                  <input class="skill-tag-input canphase3skillHeight" type="text" name="all_skill" value={cert.skills}  disabled />
+                  <input className="skill-tag-input canphase3skillHeight" type="text" name="all_skill" value={cert.skills}  disabled />
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     height="15" 
                     width="10" 
                     viewBox="0 0 384 512" 
                     id="remove-skill"
-                    class="skill-remove"
+                    className="skill-remove"
                     onClick={() => handleDeleteSkills(index)}
                   >
                     <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />

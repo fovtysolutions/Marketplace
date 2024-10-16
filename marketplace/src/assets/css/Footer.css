@@ -1,0 +1,101 @@
+.footer{
+    background-color: #e3e4e6;
+    padding: 0px 20px;
+}
+.footer .title-m{
+    color: #222;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer .menu-footer li a{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+.footer-4-cnt{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 60px;
+}
+.footer-4-cnt .f-4-title {
+    background-image: url(../images/mp/f-4.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    background-color: #d7d8da;
+    /* width: 240px; */
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+.footer-4-cnt .f-4-title:hover {
+    background-color: #cacbcc;
+}
+.footer-4-cnt .sub-title{
+    color: #888;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+.footer-4-cnt .brand-1 {
+    background-image: url(../images/mp/f-4.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 -70px;
+    background-color: #d7d8da;
+    /* width: 240px; */
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+.footer-4-cnt .brand-1:hover {
+    background-color: #cacbcc;
+}
+.footer-4-cnt .brand-2 {
+    background-image: url(../images/mp/f-4.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 -140px;
+    background-color: #d7d8da;
+    /* width: 240px; */
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+.footer-4-cnt .brand-2:hover {
+    background-color: #cacbcc;
+}
+.footer-4-cnt .brand-3 {
+    background-image: url(../images/mp/f-4.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 -210px;
+    background-color: #d7d8da;
+    /* width: 240px; */
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+.footer-4-cnt .brand-3:hover {
+    background-color: #cacbcc;
+}
+.footer-4-cnt .brand-4 {
+    background-image: url(../images/mp/f-4.png);
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: 0 -280px;
+    background-color: #d7d8da;
+    /* width: 240px; */
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+.footer-4-cnt .brand-4:hover {
+    background-color: #cacbcc;
+}
+
+@media (max-width: 768px) {
+    .footer-4-cnt {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+    }
+  }
+  

@@ -1,32 +1,29 @@
 import React from "react";
 import "./01Style/home.css";
 import Banner from "./Home/banner";
-import Heroleft from "./Home/heroleft";
-import Review from "./Home/review";
-import Problemsolving from "./Home/problemsolvesection";
-import Companies from "./Home/companysection";
-import Grituppflow from "./Home/grituppflow";
+import Heroleft from "./Home/Heroleft";
 import Heroright from "./Home/Heroright";
+import Trendingproducts from "./Home/Trendingproducts";
+import Suppliers from "./Home/Suppliers";
+import Sourcenow from "./Home/Sourcenow";
+import Quotation from "./Home/Quotation";
 
 const Homeindex = () => {
-    return (
-        <>
-            <div className="container-hero">
-                <div className="row-hero">
-                {/* <div className="hero-main-cnt"> */}
-                <Heroleft/>
-                <Banner/>
-                <Heroright/>
-                {/* </div> */}
-                </div>
-            </div>
-            
-            <Review/>
-            <Problemsolving/>
-            <Companies/>
-            <Grituppflow/>
-        </>
-    );
+	return (
+		<>
+			<div className="container-fluid">
+				<div className="row-hero mb-30">
+					<Heroleft />
+					<Banner />
+					<Heroright />
+				</div>
+				<Trendingproducts />
+				<Suppliers />
+				<Sourcenow />
+                <Quotation/>
+			</div>
+		</>
+	);
 };
 
 export default Homeindex;

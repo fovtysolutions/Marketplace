@@ -144,17 +144,17 @@ useEffect(() => {
 
     return (
         <>
-          <div data-w-id="" id="phaseContainer" class="form-container " style={{ display: showthis === 2 ? 'block' : 'none' }}>
-            <div class="w-form">
+          <div data-w-id="" id="phaseContainer" className="form-container " style={{ display: showthis === 2 ? 'block' : 'none' }}>
+            <div className="w-form">
               <div id="phaseone" className={`phase-container ${slideshow === 8 ? 'slide-left' : ''}`}>
                 <form id="phase1form">
-                  <div id="job-information" class="w-layout-grid grid-form">
-                    <h2 id="w-node-a3d1ad77-e5aa-114b-bcd7-cde3db1bb746-270281fa" class="form-subtitle">1. Personal Details </h2>
+                  <div id="job-information" className="w-layout-grid grid-form">
+                    <h2 id="w-node-a3d1ad77-e5aa-114b-bcd7-cde3db1bb746-270281fa" className="form-subtitle">1. Personal Details </h2>
                     <div>
-                      <label htmlFor="Name">First Name<span class="color-red">*</span></label>
+                      <label htmlFor="Name">First Name<span className="color-red">*</span></label>
                         <input 
                           type="text" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="username" 
                           data-name="Name" 
@@ -166,10 +166,10 @@ useEffect(() => {
                         />
                     </div>
                     <div>
-                      <label htmlFor="Name">Last Name<span class="color-red">*</span></label>
+                      <label htmlFor="Name">Last Name<span className="color-red">*</span></label>
                         <input 
                           type="text" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="lastname" 
                           data-name="Name" 
@@ -181,10 +181,10 @@ useEffect(() => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="Email-4">Email<span class="color-red">*</span></label>
+                        <label htmlFor="Email-4">Email<span className="color-red">*</span></label>
                         <input 
                           type="email" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="email" 
                           data-name="Email" 
@@ -199,7 +199,7 @@ useEffect(() => {
                         <label htmlFor="tel">Contact no<span></span></label>
                         <input 
                           type="number" 
-                          class="input w-input"
+                          className="input w-input"
                           maxLength="256" 
                           name="mobile" 
                           data-name="tel" 
@@ -211,8 +211,8 @@ useEffect(() => {
                         />
                     </div>
                     <div>
-                        <label htmlFor="prilanguage">Primary language<span class="color-red">*</span></label>
-                        <select class="input w-input" name="prilanguage" id="prilanguage" required="" value={allFormData.prilanguage} onChange={handleChange}>
+                        <label htmlFor="prilanguage">Primary language<span className="color-red">*</span></label>
+                        <select className="input w-input" name="prilanguage" id="prilanguage" required="" value={allFormData.prilanguage} onChange={handleChange}>
                           <option value="">Select your primary language</option>
                           {fetchData.map(language =>
                               language.type === 'language' ? (
@@ -230,7 +230,7 @@ useEffect(() => {
                     </div>
                     <div>
                         <label htmlFor="seclanguage">Secondary language</label>
-                        <select class="input w-input" name="seclanguage" id="seclanguage" value={allFormData.seclanguage} onChange={handleChange}>
+                        <select className="input w-input" name="seclanguage" id="seclanguage" value={allFormData.seclanguage} onChange={handleChange}>
                           <option value="">Select your secondry language</option>
                           {fetchData.map(language =>
                               language.type === 'language' ? (
@@ -240,12 +240,12 @@ useEffect(() => {
                         </select>
                     </div>
                     <div>
-                      <label htmlFor="profile-pic">Upload Your Profile Pic<span class="color-red">*</span></label>
-                      <div class="uploaded-image">
+                      <label htmlFor="profile-pic">Upload Your Profile Pic<span className="color-red">*</span></label>
+                      <div className="uploaded-image">
                         <img src={selectedImage === null?`${import.meta.env.VITE_IMAGE_URL}${allFormData.profileimg}`:selectedImage} alt="" id="profile-pic" />
                         <input 
                           type="file" 
-                          class="input w-input upload-image" 
+                          className="input w-input upload-image" 
                           maxLength="256" 
                           data-name="upload-profile-pic" 
                           placeholder="Must be less than 100kB" 
@@ -265,10 +265,10 @@ useEffect(() => {
                       </div>
                     </div>
                     <div ref={datePickerRef}>
-                      <label htmlFor="Dateofbirth">Date of birth<span class="color-red">*</span></label>
+                      <label htmlFor="Dateofbirth">Date of birth<span className="color-red">*</span></label>
                       <input 
                         type="text" 
-                        class="input w-input" 
+                        className="input w-input" 
                         value={allFormData.dob}
                         onClick={toggleDatePicker}
                         name="dob"
@@ -292,11 +292,11 @@ useEffect(() => {
                                 { errorHandle === 'success' ? '' : errorHandle.dob }
                       </div>
                     </div>
-                    <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" class="input-container-full-width">
-                      <label htmlFor="address">Address<span class="color-red">*</span></label>
+                    <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" className="input-container-full-width">
+                      <label htmlFor="address">Address<span className="color-red">*</span></label>
                       <input 
                         type="text" 
-                        class="input w-input" 
+                        className="input w-input" 
                         maxLength="256" 
                         name="address" 
                         data-name="Name" 
@@ -316,7 +316,7 @@ useEffect(() => {
                     <div>
                       <input 
                         type="text" 
-                        class="input w-input" 
+                        className="input w-input" 
                         maxLength="256" 
                         name="landmark" 
                         data-name="Job Location" 
@@ -326,7 +326,7 @@ useEffect(() => {
                       />
                     </div>
                     <div>
-                        <select class="input w-input" name="country" id="country" required="" value={allFormData.country} onChange={handleCountryChange}>
+                        <select className="input w-input" name="country" id="country" required="" value={allFormData.country} onChange={handleCountryChange}>
                           <option value="">Select Country</option>
                           {countryData.map(country => (
                             <option key={country.id} value={country.id}>
@@ -343,7 +343,7 @@ useEffect(() => {
                         </div>
                     </div>
                     <div>
-                        <select class="input w-input" name="state" id="state" required="" value={allFormData.state} onChange={handleStateChange} disabled={!selectedCountry}>
+                        <select className="input w-input" name="state" id="state" required="" value={allFormData.state} onChange={handleStateChange} disabled={!selectedCountry}>
                           <option value="">{allFormData.state === '' ? 'Select city' :allFormData.state}</option>
                           {states.map(state => (
                             <option key={state.id} value={state.id}>
@@ -360,7 +360,7 @@ useEffect(() => {
                         </div>
                     </div>
                     <div>
-                        <select class="input w-input" name="city" id="city" disabled={!selectedState} required="" value={allFormData.city} onChange={handleChange}>
+                        <select className="input w-input" name="city" id="city" disabled={!selectedState} required="" value={allFormData.city} onChange={handleChange}>
                           <option value="">{allFormData.city === '' ? 'Select city' :allFormData.city}</option>
                           {cities.map(city => (
                             <option key={city.id} value={city.name}>
@@ -379,7 +379,7 @@ useEffect(() => {
                     <div>
                       <input 
                         type="number" 
-                        class="input w-input" 
+                        className="input w-input" 
                         maxLength="256" 
                         name="zipcode" 
                         data-name="Job Location" 
@@ -396,11 +396,11 @@ useEffect(() => {
                                 { errorHandle === 'success' ? '' : errorHandle.zipcode }
                         </div>
                     </div>
-                    <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" class="input-container-full-width">
+                    <div id="w-node-_11ff66e2-bb63-3205-39c9-a48a569518d9-270281fa" className="input-container-full-width">
                       <label htmlFor="inputField">Career Objective</label>
                       <textarea 
                         type="text" 
-                        class="input w-input" 
+                        className="input w-input" 
                         name="description" 
                         onChange={handletextChange}
                         placeholder="Something Write Yourself...." 
@@ -411,7 +411,7 @@ useEffect(() => {
                         value={allFormData.description}
                         required=""
                       >radhe</textarea>
-                      <span class="canphase1fontsize" style={{ color: charCount > 799 ? 'red' : 'green' }} id="textMax">Maximum Length Should Be Below <span id="characterCount"> {charCount}</span> characters</span>
+                      <span className="canphase1fontsize" style={{ color: charCount > 799 ? 'red' : 'green' }} id="textMax">Maximum Length Should Be Below <span id="characterCount"> {charCount}</span> characters</span>
                     </div>
                   </div>
                 </form>

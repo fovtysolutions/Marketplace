@@ -74,12 +74,12 @@ const Partone = ({formID=1, Locationss=[]}) => {
 
     return (
         <>
-          <div id="locationInput" class="dropdown">
+          <div id="locationInput" className="dropdown">
             <label for="location">Location</label>
-            <div class="locationDivinput" style={{ position: 'relative' }}>
+            <div className="locationDivinput" style={{ position: 'relative' }}>
                 <input 
                   type="text" 
-                  class="input w-input" 
+                  className="input w-input" 
                   maxlength="256" 
                   name="locations" 
                   data-name="Company Website" 
@@ -114,13 +114,13 @@ const Partone = ({formID=1, Locationss=[]}) => {
                         ))}
                     </div>
                     )}
-                <div class="dropdown-content" id="cityDropdown"></div>
-                <p class="button-primary locationAddbtn" onClick={handleAddLocation} id="addbtn">Add</p>
+                <div className="dropdown-content" id="cityDropdown"></div>
+                <p className="button-primary locationAddbtn" onClick={handleAddLocation} id="addbtn">Add</p>
             </div>
-            <div id="locationItem" class="fancy-scroll">
+            <div id="locationItem" className="fancy-scroll">
               {Location.map((loc, index) => ( 
                 <>
-                    <p class="aftercontent">{loc.locations}</p>
+                    <p className="aftercontent">{loc.locations}</p>
                     <svg 
                         style={{ marginTop: '-2.5rem', marginLeft: '-0.5rem', cursor: 'pointer', marginRight: '1rem' }}
                         xmlns="http://www.w3.org/2000/svg" 
@@ -128,7 +128,7 @@ const Partone = ({formID=1, Locationss=[]}) => {
                         width="10" 
                         viewBox="0 0 384 512" 
                         id="remove-skill"
-                        class="skill-remove"
+                        className="skill-remove"
                         onClick={() => handleDeleteLocation(index)}
                     >
                         <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />

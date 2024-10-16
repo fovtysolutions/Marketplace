@@ -11,7 +11,7 @@ import Empregister from "../Components/Auth/employer_register"
 function Components() {
   return (
     <>
-      <div class="page-wrapper">
+      <div className="page-wrapper">
         <Routes>
           <Route path='/login' element={<Login />} />
           <Route path='/forgot' element={<Forgot />} />

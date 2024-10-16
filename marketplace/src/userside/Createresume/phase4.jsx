@@ -37,24 +37,24 @@ const Phase4 = ({showthis=5, slideshow=11, SavedDataphase4="notavailable", sendD
 
     return (
         <>
-          <div data-w-id="" id="phaseContainer" class="form-container" style={{ display: showthis === 5 ? 'block' : 'none' }}>
-            <div class="w-form">
+          <div data-w-id="" id="phaseContainer" className="form-container" style={{ display: showthis === 5 ? 'block' : 'none' }}>
+            <div className="w-form">
               <div id="phaseFour" className={`phase-container ${slideshow === 11 ? 'slide-left' : ''}`} >
                 <form id="phase4form">
-                  <div id="job-information" class="w-layout-grid grid-form">
+                  <div id="job-information" className="w-layout-grid grid-form">
                     <div id="w-node-_2f3c1329-2baa-388a-a287-992dd8acbed2-270281fa">
-                      <h2 class="form-subtitle">4. Social Links </h2>
-                      <div class="mg-top-8px">
+                      <h2 className="form-subtitle">4. Social Links </h2>
+                      <div className="mg-top-8px">
                         <p>
                           Skill based & other social links
                         </p>
                       </div>
                     </div>
                     <div>
-                      <label htmlFor="linkedin">Linkedin<span class="color-red">*</span></label>
+                      <label htmlFor="linkedin">Linkedin<span className="color-red">*</span></label>
                         <input 
                           type="url" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="linkedin" 
                           placeholder="/linkedin.com/username/"
@@ -75,7 +75,7 @@ const Phase4 = ({showthis=5, slideshow=11, SavedDataphase4="notavailable", sendD
                       <label htmlFor="github">Github</label>
                         <input 
                           type="url" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="github" 
                           placeholder="/github.com/username/"  
@@ -96,7 +96,7 @@ const Phase4 = ({showthis=5, slideshow=11, SavedDataphase4="notavailable", sendD
                         <label htmlFor="youtube">Youtube</label>
                         <input 
                           type="url" 
-                          class="input w-input" 
+                          className="input w-input" 
                           maxLength="256" 
                           name="youtube" 
                           placeholder="/youtube.com/username/" 
@@ -117,7 +117,7 @@ const Phase4 = ({showthis=5, slideshow=11, SavedDataphase4="notavailable", sendD
                         <label htmlFor="blog_portf">Blog / Portfolio<span></span></label>
                         <input 
                           type="url" 
-                          class="input w-input"
+                          className="input w-input"
                           maxLength="256" 
                           name="blog_portf" 
                           placeholder="/portfolio.com/username/"
@@ -138,7 +138,7 @@ const Phase4 = ({showthis=5, slideshow=11, SavedDataphase4="notavailable", sendD
                         <label htmlFor="other">Others<span></span></label>
                         <input 
                           type="url" 
-                          class="input w-input"
+                          className="input w-input"
                           maxLength="256" 
                           name="other" 
                           placeholder="/other.com/username/"

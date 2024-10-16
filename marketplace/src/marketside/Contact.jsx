@@ -7,7 +7,7 @@ import Contactcontent from "./Contact/contactcontent";
 const Contact = () => {
     return (
         <>
-            <div class="section contact-us wf-section">
+            <div className="section contact-us wf-section">
                 <Contactheading/>
                 <Contactcontent/>
             </div>

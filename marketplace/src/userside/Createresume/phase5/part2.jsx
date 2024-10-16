@@ -26,9 +26,9 @@ const Parttwo = ({ShiftFrom,ShiftTo,sendFromTime,sendToTime}) => {
         <>
             <div>
                 <label for="shift-from">Shift</label>
-                <div class="shift-from-to">
-                    <div class="custom-time-dropdown">
-                        <div class="input-wrapper">
+                <div className="shift-from-to">
+                    <div className="custom-time-dropdown">
+                        <div className="input-wrapper">
                             <DatePicker
                                 selected={selectedTimeFrom}
                                 onChange={(date) => setSelectedTimeFrom(date)}
@@ -40,12 +40,12 @@ const Parttwo = ({ShiftFrom,ShiftTo,sendFromTime,sendToTime}) => {
                                 className="input w-input"
                                 placeholderText="From"
                             />
-                            <span class="clock-icon" id="clockIcon">&#x1F551;</span>
+                            <span className="clock-icon" id="clockIcon">&#x1F551;</span>
                         </div>
                     </div>
                     <label for="shift-to"></label>
-                    <div class="custom-time-dropdown">
-                        <div class="input-wrapper">
+                    <div className="custom-time-dropdown">
+                        <div className="input-wrapper">
                             <DatePicker
                                 selected={selectedTimeTo}
                                 onChange={(date) => setSelectedTimeTo(date)}
@@ -57,7 +57,7 @@ const Parttwo = ({ShiftFrom,ShiftTo,sendFromTime,sendToTime}) => {
                                 className="input w-input"
                                 placeholderText="To"
                             />
-                            <span class="clock-icon" id="clockIcon">&#x1F551;</span>
+                            <span className="clock-icon" id="clockIcon">&#x1F551;</span>
                         </div>
                     </div>
                 </div>

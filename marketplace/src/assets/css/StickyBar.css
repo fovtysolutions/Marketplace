@@ -1,55 +1,54 @@
-.navbar {
-  position: sticky;
-  top: 0;
-  background-color: white;
-  border-bottom: 1px solid #ccc;
-  z-index: 1000;
-}
 
-.top-section {
-  display: flex;
-  align-items: center;
-  width: 100%; /* Ensure it takes full width */
-  margin-left: 10%; 
-  margin-right: 10%;
+.top-bar{
+  padding: 5px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #EBEBEA;
+  
 }
-
-.logo {
+.top-bar .logo {
   font-size: 1.5em;
   font-weight: bold;
   margin-right: 20px; /* Space between logo and search bar */
 }
 
+.top-bar .logo img {
+  max-width: 100px; /* Ensure the logo is responsive */
+}
 .search-bar {
   display: flex;
   align-items: center;
   position: relative; /* For absolute positioning of the search button */
-  flex-grow: 1;
-  max-width: 400px; /* Set a max width for the search bar */
-  margin: 0 20px; /* Adjust margins as needed */
+  /* flex-grow: 1; */
+  /* max-width: 400px; */
+  margin: 0 80px; /* Adjust margins as needed */
 }
 
 .search-bar input {
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   border: 2px solid #007bff;
   border-radius: 20px; /* Curved edges */
 }
 
 .search-button {
   position: absolute; /* Positioning it within the search bar */
-  right: 5px; /* Adjust to your preference */
+  right: 0px; /* Adjust to your preference */
   border: none;
   background: none;
   cursor: pointer;
-  color: #007bff; /* Change color as needed */
+  color: #ffffff; /* Change color as needed */
+  background-color: #007bff;
+  border-radius: 0 60px 60px 0;
+  width: 65px;
+  padding: 10px;
 }
 
 .button-group {
   display: flex;
   align-items: center; /* Align icons vertically */
   gap: 10px; /* Space between buttons */
-  padding-left: 40%;
+  /* padding-left: 40%; */
+  justify-content: flex-end;
 }
 
 .button-group {
@@ -91,7 +90,7 @@
 }
 
 .boundary {
-  border-top: 1px solid #8b8b8b;
+  border-top: 1px solid #ccc;
   margin: 10px 0; /* Space between top and bottom sections */
   height: 1px;
   width: 100%;
@@ -100,28 +99,58 @@
 .bottom-section {
   display: flex;
   align-items: center;
-  padding: 10px;
-  width: 100%; /* Ensure it takes full width */
-  margin-left: 10%; 
-  margin-right: 10%;
+  padding: 10px 20px;
+  width: 100%;
+  box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.12);
 }
 
 .left-section {
   display: flex;
-  align-items: center; /* Align filter icon and button vertically */
-  margin-left: 10px; /* Adjust margin as needed */
-  padding-right: 50px;
+  align-items: center;
 }
 
 .right-section {
   display: flex;
-  justify-content:center; /* Align buttons to the right */
-  margin-left:40%;
+  justify-content: flex-end;
+}
+
+.bottom-button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap; /* This ensures buttons wrap on smaller screens */
+}
+
+.image-button {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.image-button:hover {
+  background-color: #a7e6ff;
+}
+
+.left-section {
+  display: flex;
+  align-items: center; 
+  margin-left: 10px; /* Adjust margin as needed */
+  /* padding-right: 50px; */
+}
+
+.right-section {
+  display: flex;
+  justify-content:flex-end; /* Align buttons to the right */
+  /* margin-left:40%; */
 }
 
 .bottom-button-group {
   display: flex;
   gap: 10px; /* Space between bottom buttons */
+  
 }
 
 .image-button {
@@ -136,6 +165,38 @@
 }
 
 .image-button:hover {
-  background-color: #a1a1a1;
+  background-color: #a7e6ff;
 }
+
+@media (max-width: 768px) {
+  .right-section {
+    justify-content: center; /* Center buttons on tablets */
+  }
+  .logo {
+    text-align: left;
+  }
+  .top-bar .logo img {
+    max-width: 80px; /* Smaller logo for mobile screens */
+  }
+
+  .button-group {
+    justify-content: flex-start;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+  }
+  
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .search-bar input {
+    width: 65%;
+  }
+  .search-button {
+    right: 90px;
+  }
+
+}
+
 
