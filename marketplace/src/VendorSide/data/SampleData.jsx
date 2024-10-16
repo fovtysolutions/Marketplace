@@ -8,7 +8,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "High-quality organic fertilizer for your plants.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 2,
@@ -19,7 +21,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Canada",
         description: "Premium seeds for healthy crops.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 3,
@@ -30,7 +34,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Mexico",
         description: "Nutrient-rich compost for sustainable farming.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 4,
@@ -41,7 +47,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "High-yielding corn seeds for better harvests.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Platinum",
+        yearsInBusiness: 6
     },
     {
         id: 5,
@@ -52,7 +60,9 @@ const SampleData = [
         order: "Order Now",
         origin: "India",
         description: "Certified organic cotton seeds for premium quality.",
-        rating: "4.9/5"
+        rating: "4.9/5",
+        membership: "Gold",
+        yearsInBusiness: 7
     },
     {
         id: 6,
@@ -63,7 +73,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Brazil",
         description: "Effective herbicide for weed control.",
-        rating: "4.4/5"
+        rating: "4.4/5",
+        membership: "Silver",
+        yearsInBusiness: 2
     },
     {
         id: 7,
@@ -74,7 +86,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Italy",
         description: "Delicious and juicy organic tomato seeds.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 8,
@@ -85,7 +99,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Spain",
         description: "Natural pest repellent for eco-friendly farming.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Platinum",
+        yearsInBusiness: 8
     },
     {
         id: 9,
@@ -96,7 +112,9 @@ const SampleData = [
         order: "Order Now",
         origin: "France",
         description: "Seeds for a variety of seasonal vegetables.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 10,
@@ -107,7 +125,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Germany",
         description: "Fresh seeds for aromatic herbs.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Gold",
+        yearsInBusiness: 6
     },
     {
         id: 11,
@@ -118,7 +138,9 @@ const SampleData = [
         order: "Order Now",
         origin: "India",
         description: "Soft and breathable cotton t-shirt.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 12,
@@ -129,7 +151,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Stylish summer dress for any occasion.",
-        rating: "4.9/5"
+        rating: "4.9/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 13,
@@ -140,7 +164,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Canada",
         description: "Comfortable hooded sweatshirt for cold weather.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 14,
@@ -151,7 +177,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Italy",
         description: "Classic denim jacket for a timeless look.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Platinum",
+        yearsInBusiness: 6
     },
     {
         id: 15,
@@ -162,7 +190,9 @@ const SampleData = [
         order: "Order Now",
         origin: "China",
         description: "Soft and eco-friendly bamboo socks.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 16,
@@ -173,7 +203,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Thailand",
         description: "Comfortable casual shorts for summer.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Silver",
+        yearsInBusiness: 2
     },
     {
         id: 17,
@@ -184,7 +216,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Bangladesh",
         description: "Stylish formal shirt for office wear.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 18,
@@ -195,7 +229,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Vietnam",
         description: "Comfortable yoga pants for workouts.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Platinum",
+        yearsInBusiness: 6
     },
     {
         id: 19,
@@ -206,7 +242,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Lightweight windbreaker for outdoor activities.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 20,
@@ -217,7 +255,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Australia",
         description: "Stylish swimwear for beach days.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 21,
@@ -228,7 +268,9 @@ const SampleData = [
         order: "Order Now",
         origin: "France",
         description: "Nourishing cream for all skin types.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 22,
@@ -239,7 +281,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Gentle face wash with natural ingredients.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 23,
@@ -250,7 +294,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Australia",
         description: "Effective sunscreen for all skin types.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 24,
@@ -261,7 +307,9 @@ const SampleData = [
         order: "Order Now",
         origin: "India",
         description: "Herbal shampoo for healthy hair.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Silver",
+        yearsInBusiness: 2
     },
     {
         id: 25,
@@ -272,7 +320,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Italy",
         description: "Natural scrub for glowing skin.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 26,
@@ -283,7 +333,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Moisturizing lip balm for dry lips.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 27,
@@ -294,7 +346,9 @@ const SampleData = [
         order: "Order Now",
         origin: "France",
         description: "Rejuvenating serum for youthful skin.",
-        rating: "4.9/5"
+        rating: "4.9/5",
+        membership: "Platinum",
+        yearsInBusiness: 6
     },
     {
         id: 28,
@@ -305,7 +359,9 @@ const SampleData = [
         order: "Order Now",
         origin: "UK",
         description: "Relaxing bath bombs for a soothing experience.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 29,
@@ -316,7 +372,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Canada",
         description: "Sustainable wraps for food storage.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 30,
@@ -327,7 +385,9 @@ const SampleData = [
         order: "Order Now",
         origin: "South Korea",
         description: "Hydrating facial mask for a fresh look.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 31,
@@ -338,7 +398,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Germany",
         description: "Durable safety helmet for construction workers.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 32,
@@ -349,7 +411,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Comfortable steel-toe boots for protection.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Platinum",
+        yearsInBusiness: 6
     },
     {
         id: 33,
@@ -360,7 +424,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Japan",
         description: "High-performance power drill for heavy-duty tasks.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 34,
@@ -371,7 +437,9 @@ const SampleData = [
         order: "Order Now",
         origin: "China",
         description: "Durable gloves for construction work.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Silver",
+        yearsInBusiness: 2
     },
     {
         id: 35,
@@ -382,7 +450,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Australia",
         description: "Sustainable boards for construction projects.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
     {
         id: 36,
@@ -393,7 +463,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Reliable generator for outdoor projects.",
-        rating: "4.8/5"
+        rating: "4.8/5",
+        membership: "Platinum",
+        yearsInBusiness: 7
     },
     {
         id: 37,
@@ -404,7 +476,9 @@ const SampleData = [
         order: "Order Now",
         origin: "UK",
         description: "Sturdy ladder for safe access.",
-        rating: "4.7/5"
+        rating: "4.7/5",
+        membership: "Gold",
+        yearsInBusiness: 5
     },
     {
         id: 38,
@@ -415,7 +489,9 @@ const SampleData = [
         order: "Order Now",
         origin: "Germany",
         description: "Efficient concrete mixer for construction sites.",
-        rating: "4.9/5"
+        rating: "4.9/5",
+        membership: "Platinum",
+        yearsInBusiness: 8
     },
     {
         id: 39,
@@ -426,7 +502,9 @@ const SampleData = [
         order: "Order Now",
         origin: "USA",
         description: "Handy tool belt for easy access to tools.",
-        rating: "4.5/5"
+        rating: "4.5/5",
+        membership: "Silver",
+        yearsInBusiness: 3
     },
     {
         id: 40,
@@ -437,7 +515,9 @@ const SampleData = [
         order: "Order Now",
         origin: "France",
         description: "Protective goggles for construction work.",
-        rating: "4.6/5"
+        rating: "4.6/5",
+        membership: "Gold",
+        yearsInBusiness: 4
     },
 ];
 

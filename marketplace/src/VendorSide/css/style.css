@@ -2,6 +2,7 @@
     display: flex;
     background-color: #f4f4f4;
 }
+
 .leftsideven {
     width: 30%;
     margin-left: 10%;
@@ -9,39 +10,45 @@
     padding-left: 20px;
     margin-top: 18px;
 }
+
 .rightsideven {
     width: 60%;
-    padding-bottom: 150px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top:20px;
-    margin-right:10%;
-    margin-bottom:15px;
+    margin-top: 20px;
+    margin-right: 10%;
+    margin-bottom: 15px;
     background-color: white;
 }
+
 .bottomsideven {
     text-align: left;
     width: 79%;
     height: 65vh;
     margin-left: 11%;
+    margin-bottom: 120px;
 }
+
 .filterven {
     background-color: white;
     padding-bottom: 30px;
     margin-top: 30px;
     padding-left: 20px;
 }
+
 .titlefilven {
     color: black;
     font-size: large;
 }
+
 .buttonfilven {
     background-color: blue;
     color: white;
     padding-top: 10px;
     width: 85%;
 }
-.filteritemven{
+
+.filteritemven {
     color: #000000;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -51,37 +58,41 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.vendorbottomcontainer{
+
+.vendorbottomcontainer {
     background-color: #f4f4f4;
 }
-.navigationven{
+
+.navigationven {
     background-color: #f4f4f4;
     padding-bottom: 10px;
     margin-left: -20px;
     margin-right: -20px;
-    color:#737373;
+    color: #737373;
 }
 
 .boundaryven {
     border-top: 1px solid #bcbcbc;
-    margin: 10px 0; /* Space between top and bottom sections */
+    margin: 10px 0;
+    /* Space between top and bottom sections */
     height: 1px;
-    width: 100%;  
+    width: 100%;
 }
 
-.catsuggestbox{
+.catsuggestbox {
     display: flex;
 }
 
 .CatSuggestven {
-    color:#6d6d6d;
+    color: #000000;
     margin-right: 10px;
     margin-left: 10px;
 }
 
 .carouselven {
     width: 100%;
-    height: 500px;
+    height: auto;
+    /* Change to auto for responsiveness */
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
@@ -92,14 +103,15 @@
 
 .carouselven-bottom {
     width: 100%;
-    height: 500px;
+    height: auto;
+    /* Change to auto for responsiveness */
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .carouselven-body {
@@ -116,25 +128,32 @@
     padding: 4px 8px;
     border-radius: 4px;
     margin-bottom: 12px;
-    margin-left: 170px;
+    margin-left: 60%;
+    /* Center badge horizontally */
+    margin-right: auto;
+    /* Center badge horizontally */
 }
 
 .carouselven-image {
-    width: 50%;
+    width: 100%;
+    /* Make image responsive */
     height: auto;
-    max-height: 150px;   /* Adjust image height for the new dimensions */
+    max-height: 150px;
+    /* Adjust image height */
     border-radius: 4px;
     margin-bottom: 12px;
 }
 
 .carouselven-title {
-    font-size: 1.2em;     /* Adjusted font size for title */
+    font-size: 1.2em;
+    /* Adjusted font size for title */
     font-weight: bold;
     margin: 8px 0;
 }
 
 .carouselven-price {
-    font-size: 1em;       /* Adjusted font size for price */
+    font-size: 1em;
+    /* Adjusted font size for price */
     color: #28a745;
     margin: 4px 0;
 }
@@ -146,11 +165,14 @@
 .carouselven-member-category {
     margin: 4px 0;
     color: #555;
-    font-size: 0.9em;     /* Keep smaller text size */
+    font-size: 0.9em;
+    /* Keep smaller text size */
 }
 
 .carouselven-buttons {
-    margin-top: auto;     /* Push buttons to the bottom */
+    margin-top: auto;
+    display: flex;
+    /* Push buttons to the bottom */
 }
 
 .carouselven-button {
@@ -158,7 +180,7 @@
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 8px 12px;    /* Adjust padding for buttons */
+    padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -173,16 +195,25 @@
     margin: 5px;
 }
 
+.pagetitleven {
+    color: rgba(0, 0, 255, 0.804);
+    margin: 5px;
+}
+
 .view-controls {
     display: flex;
-    align-items: center;  /* Center vertically */
-    justify-content: flex-end;  /* Align to the right */
-    margin-left: auto;  /* Push to the right */
+    align-items: center;
+    /* Center vertically */
+    justify-content: flex-end;
+    /* Align to the right */
+    margin-left: auto;
+    /* Push to the right */
 }
 
 .icon {
     cursor: pointer;
-    margin-left: 10px; /* Space between icons */
+    margin-left: 10px;
+    /* Space between icons */
     font-size: large;
 }
 
@@ -206,6 +237,8 @@
     padding: 16px;
     border: 1px solid #ddd;
     margin-bottom: 16px;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
 }
 
 .listview-image {
@@ -239,6 +272,9 @@
 
 .listview-button {
     margin-right: 8px;
+    background-color: blue;
+    color:white;
+    font-weight: bold;
 }
 
 .filterbuttonven {
@@ -251,43 +287,237 @@
 }
 
 .inputfilven {
-    width: 80px; /* Adjust width as needed */
+    width: 80px;
+    /* Adjust width as needed */
     margin: 10px;
-    padding: 5px; /* Padding for input */
-    margin-bottom:10px;
+    padding: 5px;
+    /* Padding for input */
+    margin-bottom: 10px;
     width: 85%;
 }
 
 .input-divider {
-    margin: 0 5px; /* Space around the "to" text */
+    margin: 0 5px;
+    /* Space around the "to" text */
 }
 
 .floating-element {
-    position: fixed; /* Makes the element stick during scroll */
-    top: 20px; /* Distance from the top of the viewport */
-    width: 100px; /* Set a width for the floating element */
-    background: #f4f4f4; /* Background color */
-    float:inline-end;
+    position: fixed;
+    /* Makes the element stick during scroll */
+    top: 20px;
+    /* Distance from the top of the viewport */
+    width: 100px;
+    /* Set a width for the floating element */
+    background: #f4f4f4;
+    /* Background color */
+    float: inline-end;
     margin-left: 94%;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .floating-buttons {
-    display: block; /* Make buttons stack vertically */
-    margin: 5px 0; /* Space between buttons */
-    width: 100%; /* Full width for buttons */
+    display: block;
+    /* Make buttons stack vertically */
+    margin: 5px 0;
+    /* Space between buttons */
+    width: 100%;
+    /* Full width for buttons */
     padding-bottom: 20px;
-    background: #ffffff; /* Button color */
-    color: rgb(0, 0, 0); /* Text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    background: #ffffff;
+    /* Button color */
+    color: rgb(0, 0, 0);
+    /* Text color */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
 }
 
 .floating-buttons:hover {
-    background: #c0c0c0; /* Darker color on hover */
+    background: #c0c0c0;
+    /* Darker color on hover */
 }
 
 .catandview {
     display: flex;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    margin: 0 5px;
+    font-size: large;
+}
+
+.pagination .active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.previous,
+.next {
+    cursor: pointer;
+}
+
+.adpanelvenr{
+width: 100%;
+margin-top: 40px;
+}
+
+@media(max-width: 1025px) {
+    .floating-element{
+        margin-left: 90%;
+    }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .floating-element{
+        display: none;
+    }
+    .carouselven {
+        padding: 12px;
+        /* Reduce padding on smaller screens */
+    }
+
+    .carouselven-bottom{
+        padding: 12px;
+    }
+    
+    .bottomsideven{
+        margin-bottom: 180px;
+    }
+
+    .carouselven-title {
+        font-size: 1.1em;
+        /* Slightly smaller title */
+    }
+
+    .carouselven-price {
+        font-size: 0.9em;
+        /* Slightly smaller price */
+    }
+
+    .carouselven-button {
+        padding: 6px 10px;
+        /* Smaller button padding */
+    }
+
+    .carouselven-image {
+        max-height: 120px;
+        /* Reduce image height */
+    }
+
+    .leftsideven {
+        display: none;
+    }
+
+    .rightsideven {
+        width: 100%;
+        margin-right: 1%;
+    }
+
+    .vendorcontainer {
+        width: 100%;
+    }
+
+    .listview-item {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    .listview-image {
+        width: 80px;
+        /* Adjust image size */
+        height: 80px;
+        /* Adjust image size */
+        margin-bottom: 12px;
+        /* Add bottom margin for spacing */
+        margin-right: 0;
+        /* Remove right margin */
+    }
+
+    .listview-title {
+        font-size: 1.1em;
+        /* Slightly smaller title */
+    }
+
+    .listview-price,
+    .listview-order,
+    .listview-origin {
+        font-size: 0.9em;
+        /* Slightly smaller text */
+    }
+}
+
+@media (max-width: 480px) {
+    .listview-item {
+        padding: 12px;
+        /* Reduce padding */
+    }
+
+    .listview-image {
+        width: 70px;
+        /* Further adjust image size */
+        height: 70px;
+        /* Further adjust image size */
+    }
+
+    .listview-title {
+        font-size: 1em;
+        /* Even smaller title */
+    }
+
+    .listview-price,
+    .listview-order,
+    .listview-origin {
+        font-size: 0.8em;
+        /* Further reduce text size */
+    }
+
+    .listview-buttons {
+        flex-direction: column;
+        /* Stack buttons vertically */
+        margin-top: 12px;
+        /* Add margin for spacing */
+    }
+
+    .listview-button {
+        margin-right: 15px;
+        /* Remove right margin */
+        margin-bottom: 8px;
+        /* Add bottom margin for spacing */
+    }
+
+    .carouselven {
+        padding: 8px;
+        /* Further reduce padding */
+    }
+
+    .carouselven-title {
+        font-size: 1em;
+        /* Even smaller title */
+    }
+
+    .carouselven-price {
+        font-size: 0.8em;
+        /* Even smaller price */
+    }
+
+    .carouselven-button {
+        padding: 4px 8px;
+        /* Further reduce button padding */
+    }
+
+    .carouselven-image {
+        max-height: 100px;
+        /* Reduce image height for mobile */
+    }
 }
