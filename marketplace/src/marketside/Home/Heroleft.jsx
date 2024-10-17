@@ -1,8 +1,22 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { AiOutlineBars } from "react-icons/ai";
+import SampleData from '../../VendorSide/data/SampleData.json';
 import '../01Style/list.css';
 
 export default function Heroleft() {
+  const items = SampleData;
+  const [displayCount, setDisplayCount] = useState(8);
+
+  // Create a unique set of categories
+  const uniqueCategories = Array.from(new Set(items.map(item => item.category)));
+
+  const handleExpandDisplay = () => {
+    setDisplayCount(prevCount => prevCount + 8);
+  }
+
+  const handleReduceDisplay = () => {
+    setDisplayCount(prevCount => prevCount - 8);
+  }
   return (
     <>
         <div className="col-xl-3 col-lg-3 col-md-3 col-12  mb-30">
@@ -13,15 +27,20 @@ export default function Heroleft() {
                   </div>
                   <div className="sidebar-content">
                     <ul className="category-list">
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Agriculture</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Building Construction</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Electrical Equipment</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Apparel & Accessories </a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Automobile & Motorcycles</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Beauty</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Personal Care</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>Chemicals</a></li>
-                      <li className="category-item"><a href="shop-grid.html"  style={{ all: 'unset'}}>More Categories</a></li>
+                      {uniqueCategories.slice(0,displayCount).map((item,index)=>(
+                        <li 
+                          key = {index}
+                          className="category-item">
+                          <a href="shop-grid.html"  style={{ all: 'unset'}}>
+                          {item}</a>
+                        </li>
+                      ))}
+                      {uniqueCategories.length > displayCount && (
+                        <button className='showmore' onClick={handleExpandDisplay}>Show More</button>
+                      )}
+                      {(uniqueCategories.length > displayCount) && (
+                        <button className='showmore' onClick={handleReduceDisplay}>Show Less</button>
+                      )}
                     </ul>
                     {/* <div>
                       <div className="collapse" id="moreMenu">

@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import '../css/style.css';
 import FilterSection from "../hooks/FilterSection";
-import SampleData from "../data/SampleData";
+import SampleData from "../data/SampleData.json";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useParams } from "react-router-dom";
 
 const LeftSideVendor = ({ onFilterUpdate }) => {
     const { category } = useParams();
     const [Membership, setuniquemembership] = useState([]);
-    const [Category, setuniqueCategory] = useState([]);
     const [ProductName, setuniqueProductName] = useState([]);
     const [Origin, setuniqueorigin] = useState([]);
     const [PriceRangeupper, setpricerangeupper] = useState('');
@@ -16,7 +15,7 @@ const LeftSideVendor = ({ onFilterUpdate }) => {
     const [specification, setspecification] = useState([]);
     const [FOBport, setFOBport] = useState([]);
     const [SupplierLocation, setSupplierLocation] = useState([]);
-    const [YearsinBusiness, setYearsinBusiness] = useState(null);
+    const [YearsinBusiness, setYearsinBusiness] = useState('');
     const [filtereditems, setfiltereditems] = useState([]);
     const [selectedFilters, setSelectedFilters] = useState([]);
 
@@ -34,37 +33,51 @@ const LeftSideVendor = ({ onFilterUpdate }) => {
         loadFilters();
     }, []);
 
+    const filterItems = useCallback(() => {
+        let filteredData = SampleData;
+
+        // Always filter by category first
+        if (category) {
+            filteredData = filteredData.filter(item => item.category === category);
+        }
+
+        // Filter by Years in Business
+        if (YearsinBusiness) {
+            filteredData = filteredData.filter(item => item.yearsInBusiness >= YearsinBusiness);
+        }
+
+        // Filter by Price Range
+        if (PriceRangelower || PriceRangeupper) {
+            filteredData = filteredData.filter(item => {
+                const price = parseFloat(item.price.replace('$', ''));
+                const lowerBound = PriceRangelower ? parseFloat(PriceRangelower) : 0;
+                const upperBound = PriceRangeupper ? parseFloat(PriceRangeupper) : Infinity;
+                return price >= lowerBound && price <= upperBound;
+            });
+        }
+
+        // Apply additional filters based on selectedFilters
+        if (selectedFilters.length > 0) {
+            filteredData = filteredData.filter(item =>
+                selectedFilters.some(filter =>
+                    item.membership === filter ||
+                    item.badge === filter ||
+                    item.description === filter ||
+                    item.order === filter ||
+                    item.origin === filter ||
+                    item.rating === filter ||
+                    item.title === filter
+                )
+            );
+        }
+
+        setfiltereditems(filteredData);
+        onFilterUpdate(filteredData); // Pass filtered data back
+    }, [category, PriceRangelower, PriceRangeupper, YearsinBusiness, selectedFilters, onFilterUpdate]);
+
     useEffect(() => {
-        const filterItems = () => {
-            let filteredData = SampleData;
-
-            // Always filter by category first
-            if (category) {
-                filteredData = filteredData.filter(item => item.category === category);
-            }
-
-            // Apply additional filters based on selectedFilters
-            if (selectedFilters.length > 0) {
-                filteredData = filteredData.filter(item =>
-                    selectedFilters.some(filter =>
-                        item.membership === filter ||
-                        item.badge === filter ||
-                        item.description === filter ||
-                        item.order === filter ||
-                        item.origin === filter ||
-                        item.rating === filter ||
-                        item.title === filter ||
-                        item.yearsInBusiness === filter
-                    )
-                );
-            }
-
-            setfiltereditems(filteredData);
-            onFilterUpdate(filteredData); // Pass filtered data back
-        };
-
-        filterItems();
-    }, [selectedFilters, onFilterUpdate, category]); // Add category to dependencies
+        filterItems(); // Call filterItems when dependencies change
+    }, [selectedFilters, filterItems]); // Ensure filterItems is a dependency
 
     useEffect(() => {
         const extractUniqueValues = (data) => {
@@ -92,6 +105,24 @@ const LeftSideVendor = ({ onFilterUpdate }) => {
         await AsyncStorage.removeItem("FilterCriteria"); // Clear stored filters
     };
 
+    const handlelowprice=(e)=>{
+        console.log("Lower End Price Set",e);
+        setpricerangelower(e);
+        filterItems();
+    };
+
+    const handlehighprice=(e)=>{
+        console.log("Upped End Price Set",e);
+        setpricerangeupper(e);
+        filterItems();
+    };
+
+    const handleyearsinbusiness=(e)=>{
+        console.log("Years in Business Set",e);
+        setYearsinBusiness(e);
+        filterItems();
+    };
+
     return (
         <div className='leftsideven'>
             <div className='filterven'>
@@ -101,18 +132,18 @@ const LeftSideVendor = ({ onFilterUpdate }) => {
                 <FilterSection title="Sort By Specification" items={specification} selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
                 <p className="titlefilven"><strong>Price Range</strong></p>
                 <div className="input-container">
-                    <input className="inputfilven" type="number" placeholder="Min" value={PriceRangelower} onChange={(e) => setpricerangelower(e.target.value)} />
+                    <input className="inputfilven" type="text" placeholder="Min" value={PriceRangelower} onChange={(e) => handlelowprice(e.target.value)} />
                     <span className="input-divider">to</span>
-                    <input className="inputfilven" type="number" placeholder="Max" value={PriceRangeupper} onChange={(e) => setpricerangeupper(e.target.value)} />
+                    <input className="inputfilven" type="text" placeholder="Max" value={PriceRangeupper} onChange={(e) => handlehighprice(e.target.value)} />
                 </div>
                 <FilterSection title="By FOB Port" items={FOBport} selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
                 <FilterSection title="Supplier Location" items={SupplierLocation} selectedFilters={selectedFilters} setSelectedFilters={setSelectedFilters} />
                 <p className="titlefilven"><strong>Years in Business</strong></p>
-                <input className="inputfilven" placeholder="Years" value={YearsinBusiness} onChange={(e) => setYearsinBusiness(e.target.value)} /><br />
+                <input className="inputfilven" type="text" placeholder="Years" value={YearsinBusiness} onChange={(e) => handleyearsinbusiness(e.target.value)} /><br />
                 <button className="buttonfilven" type="button" onClick={handleFilterReset}>Reset</button>
             </div>
             <div className='adleftven'>
-                <img style={{ width: '100%', height: '40%' }} src="https://frla.org/wp-content/uploads/2020/08/300x600-Sample-Ad.png" alt="ad" />
+                <img className="leftsidead" src="https://media.istockphoto.com/id/1921388010/photo/homemade-sweetmeats-with-chocolate-bars-and-cocoa-beans.jpg?s=612x612&w=0&k=20&c=9iWLDZZqgNp4ZS9Q79uIENcIC9mBGQ1ZtqqexSPq6fA=" alt="ad" />
             </div>
         </div>
     );

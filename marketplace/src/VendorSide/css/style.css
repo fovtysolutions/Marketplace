@@ -80,13 +80,14 @@
 }
 
 .catsuggestbox {
-    display: flex;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .CatSuggestven {
     color: #000000;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
+    text-overflow: ellipsis;
 }
 
 .carouselven {
@@ -367,16 +368,89 @@
 
 .adpanelvenr{
 width: 100%;
+height: 198px;
 margin-top: 40px;
+margin-bottom: 20px;
 }
 
+.leftsidead{
+    width:100%;
+    height: 480px;
+}
+
+.scroll-menu {
+    display: flex;
+    overflow: auto; /* Hide overflow */
+}
+
+.icon {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    visibility: hidden;
+  }
+
+  .swiper-button-nextn,
+  .swiper-button-prevn {
+      position: absolute; /* Position the buttons absolutely */
+      top: 50%; /* Center vertically */
+      transform: translateY(-50%); /* Adjust for exact centering */
+      width: 40px; /* Button width */
+      height: 40px; /* Button height */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%; /* Circular shape */
+      color: white; /* Icon color */
+      transition: background-color 0.3s; /* Smooth hover effect */
+      z-index: 10; /* Ensure buttons are above slides */
+  }
+  
+  .swiper-button-nextn {
+      right: 10px; /* Position on the right */
+  }
+  
+  .swiper-button-prevn {
+      left: 10px; /* Position on the left */
+  }
+  
+  .swiper-button-nextn:hover,
+  .swiper-button-prevn:hover {
+      background-color: rgb(140, 140, 140); /* Darken on hover */
+  }
+  
+  .swiper-button-nextn img,
+  .swiper-button-prevn img {
+      width: 20px; /* Adjust icon size */
+      height: 20px; /* Adjust icon size */
+  }
+    
 @media(max-width: 1025px) {
     .floating-element{
         margin-left: 90%;
     }
+    .adpanel{
+        margin-top:45px;
+    }
+    .listview-buttons{
+        display: flex;
+        height: 30px;
+        width: 300px;
+    }
+    .listview-button{
+        padding-bottom: 30px;
+        word-break:keep-all;
+        margin: 3px;
+    }
 }
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
+    .listview-button{
+        margin: 2px;
+    }
     .floating-element{
         display: none;
     }
@@ -457,7 +531,7 @@ margin-top: 40px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     .listview-item {
         padding: 12px;
         /* Reduce padding */

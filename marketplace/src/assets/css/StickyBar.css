@@ -168,7 +168,7 @@
   background-color: #a7e6ff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .right-section {
     justify-content: center; /* Center buttons on tablets */
   }
