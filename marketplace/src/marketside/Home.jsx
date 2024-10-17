@@ -7,6 +7,8 @@ import Trendingproducts from "./Home/Trendingproducts";
 import Suppliers from "./Home/Suppliers";
 import Sourcenow from "./Home/Sourcenow";
 import Quotation from "./Home/Quotation";
+import Leads from "./Leads";
+import TradeShow from "./tradeshow";
 
 const Homeindex = () => {
 	return (
@@ -21,6 +23,8 @@ const Homeindex = () => {
 				<Suppliers />
 				<Sourcenow />
                 <Quotation/>
+				<Leads />
+				<TradeShow />
 			</div>
 		</>
 	);

@@ -11,7 +11,7 @@ const CategorySwiper = ({ allcategories, changeCategory }) => {
         <Swiper
             centeredSlides={true}
             spaceBetween={10} // Space between slides
-            slidesPerView={7} // Number of slides to show at once
+            slidesPerView={5} // Number of slides to show at once
             navigation={{
                 prevEl: '.swiper-button-prevn',
                 nextEl: '.swiper-button-nextn',
