@@ -1,0 +1,86 @@
+/* Global styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin: 50px auto;
+}
+
+.card {
+    background-color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* This will allow the card to take the full width of the container */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.calendar-icon {
+    font-size: 24px;
+    color: #888;
+}
+
+.months {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.months li {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.image-container img {
+    width: 50%;
+    height: auto;
+}
+
+.content {
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    margin: 0 0 10px 0;
+}
+
+.content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.details {
+    margin-bottom: 10px;
+}
+
+.details strong {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
