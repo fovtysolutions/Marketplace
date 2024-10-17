@@ -2,7 +2,7 @@ import React from "react";
 import '../css/style.css';
 import CarouselItem from "../hooks/CarouselItem";
 import Carousel from 'react-multi-carousel';
-import SampleData from "../data/SampleData";
+import SampleData from "../data/SampleData.json";
 
 const BottomsideVendor = () => {
 

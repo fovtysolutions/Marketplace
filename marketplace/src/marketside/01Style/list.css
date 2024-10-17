@@ -2,6 +2,8 @@
     list-style-type: none; /* Remove default bullet points */
     padding: 0; /* Remove default padding */
     margin: 0; /* Remove default margin */
+    overflow-y: scroll;
+    height: 400px;
 }
 
 .category-list li {

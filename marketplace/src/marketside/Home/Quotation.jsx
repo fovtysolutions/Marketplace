@@ -1,7 +1,7 @@
 import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
 
-export default function Quotation() {
+export default function Quotation({nameQuote="",keyword="",description="",quantity="",inputType=""}) {
 	return (
 		<>
 			<div className="quotation-sec">
@@ -31,7 +31,7 @@ export default function Quotation() {
 							<div className="quotation-form">
 								<div className="container mt-5">
 									<form>
-                                    <h2 className="title-form-qut">Request a Quotation</h2>
+                                    <h2 className="title-form-qut">{nameQuote}</h2>
 										<div className="mb-3">
 											{/* <label htmlFor="productName" className="form-label">
 												Product Name or Keywords
@@ -41,7 +41,7 @@ export default function Quotation() {
 												className="form-control"
 												id="productName"
 												required
-                                                placeholder="Product Name or Keywords"
+                                                placeholder={keyword}
 											/>
 										</div>
 										{/* <div className="form-floating mb-3">
@@ -68,7 +68,7 @@ export default function Quotation() {
 												rows={3}
 												required
 												defaultValue={""}
-                                                placeholder="Product Description"
+                                                placeholder={description}
 											/>
 										</div>
 										<div className="mb-3">
@@ -76,12 +76,12 @@ export default function Quotation() {
 												Purchase Quantity
 											</label> */}
 											<input
-												type="number"
+												type={inputType}
 												className="form-control"
 												id="purchaseQuantity"
 												min={1}
 												required
-                                                placeholder="Purchase Quantity"
+                                                placeholder={quantity}
 											/>
 										</div>
 										<button type="submit" className="btn">

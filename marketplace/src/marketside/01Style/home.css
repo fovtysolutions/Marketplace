@@ -90,6 +90,8 @@
  .supplier-card-txt .title{
  font-weight: bold;
  margin-bottom: 2px;
+ font-size: 0.8rem;
+ width: 260px;
  }
  .supplier-card-txt .manufacture{
    font-size: small;
