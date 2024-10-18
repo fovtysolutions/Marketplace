@@ -90,6 +90,27 @@
 .footer-4-cnt .brand-4:hover {
     background-color: #cacbcc;
 }
+.footer-app .f-apple-store{
+    background-color: #464749;
+    
+}
+.footer-app .f-android-store{
+    background-color: #669600;
+    
+}
+.footer-app a{
+   color: #ffffff;
+   padding: 8px 10px;
+   border-radius: 3px;
+   text-align: center;
+    
+}
+.footer-app{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
 
 @media (max-width: 768px) {
     .footer-4-cnt {

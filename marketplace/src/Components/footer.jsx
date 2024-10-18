@@ -5,6 +5,8 @@ import React from "react";
 // 	FaTwitter,
 // 	FaLinkedinIn,
 // } from "react-icons/fa";
+import { FaApple } from "react-icons/fa";
+import { DiAndroid } from "react-icons/di";
 import "../assets/css/Footer.css";
 
 const Footer = () => {
@@ -157,22 +159,39 @@ const Footer = () => {
 									<div className="sub-cnt">
 										<div className="sub-title">Co-brands </div>
 									</div>
-                  <div className="brand-1">
+									<div className="brand-1">
 										<a href="#"></a>
 									</div>
-                  <div className="brand-2">
+									<div className="brand-2">
 										<a href="#"></a>
 									</div>
-                  <div className="brand-3">
+									<div className="brand-3">
 										<a href="#"></a>
 									</div>
-                  <div className="brand-4">
+									<div className="brand-4">
 										<a href="#"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+				</div>
+				<div className="container">
+					<div className="col-md-4 col-12">
+						<div className="footer-app">
+							<span>Free App:</span>
+							<a href="#" className="f-apple-store">
+								<FaApple />
+								App Store
+							</a>
+							<a href="#" className="f-android-store">
+								<DiAndroid />
+								Google Play
+							</a>
+						</div>
+					</div>
+					<div className="col-md-4 col-12"></div>
+					<div className="col-md-4 col-12"></div>
 				</div>
 			</footer>
 		</>
